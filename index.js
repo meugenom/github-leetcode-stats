@@ -1,3 +1,6 @@
+'use strict';
+
+require('dotenv').config();
 const Mustache = require("mustache");
 const fs = require("fs");
 const MUSTACHE_MAIN_DIR = "./main.mustache";
@@ -8,10 +11,17 @@ const githubLanguages = require("./src/github-languages")
 const leetcode = require("./src/leetcode");
 const config = require("./src/config");
 const svg = require("./src/svg")
+const githubToken = process.env.GH_TOKEN;
 
 /**
  * main file
  */
+//check github token
+if (!githubToken) {
+	throw new Error('GH_TOKEN is not defined');
+}else{
+	config.token = githubToken;
+}
 
 //mustache metadata file
 let DATA = {

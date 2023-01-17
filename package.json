@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/meugenom/github-leetcode-stats#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "mustache": "^4.2.0"
   },
   "devDependencies": {

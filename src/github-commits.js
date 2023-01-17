@@ -64,7 +64,7 @@ const setData = async (res) => {
     let options = {
       headers: {
         "Content-Type": "application/json",
-		Authorization: process.env.GITHUB_TOKEN,
+		Authorization: `bearer ${token}`,
       },
     };
     await axios
