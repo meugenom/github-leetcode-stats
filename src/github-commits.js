@@ -63,6 +63,8 @@ const setData = async (res) => {
     let options = {
       headers: {
         "Content-Type": "application/json",
+        //Authorization: `bearer ${token}`,
+		Authorization :process.env.TOKEN,
       },
     };
     await axios
