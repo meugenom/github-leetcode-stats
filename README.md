@@ -6,7 +6,7 @@ Dynamically generated stats for GitHub and Leetcode sites for README.md (In Prog
 
 #### Github Stats:
 	Total Repositories : 16
-	Total Commits : 513
+	Total Commits : 515
 	Closed Issues: 48
 	Contributions: 0
 	Total PullRequests: 107
@@ -17,4 +17,5 @@ Dynamically generated stats for GitHub and Leetcode sites for README.md (In Prog
 [![LeetCode Stats Medium](https://img.shields.io/badge/MEDIUM%20%3A-63-yellow)](https://leetcode.com/meugenom/)
 [![LeetCode Stats Hard](https://img.shields.io/badge/HARD%20%3A-5-red)](https://leetcode.com/meugenom/)
 
-[![README build](https://github.com/meugenom/github-leetcode-stats/actions/workflows/main.yaml/badge.svg)](https://github.com/meugenom/github-leetcode-stats/actions/workflows/main.yaml)
+[![README build](https://github.com/meugenom/github-leetcode-stats/actions/workflows/main.yml/badge.svg)](https://github.com/meugenom/github-leetcode-stats/actions/workflows/main.yml)
+
