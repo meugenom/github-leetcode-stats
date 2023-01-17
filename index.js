@@ -90,12 +90,12 @@ function generateLeetcodeInfo(info){
 //main
 async function main() {
 	
-	await githubCommits.get(config.username, config.token); //get info about github commits, repositories
+	//await githubCommits.get(config.username, config.token); //get info about github commits, repositories
   	//await console.log(JSON.stringify(githubCommits.info));
   	//await generateGithubCommitsInfo(githubCommits.info);
 
   	
-	await githubLanguages.get(config.username, config.token); //get info about github most used languages
+	//await githubLanguages.get(config.username, config.token); //get info about github most used languages
   	//await console.log(JSON.stringify(githubLanguages.info));
 	//await svg.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
 	
