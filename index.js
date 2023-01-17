@@ -25,10 +25,6 @@ if (!githubToken) {
 
 //mustache metadata file
 let DATA = {
-  name: "Eugen",
-  city: "Neu-Isenburg",
-  url: "meugenom.com",
-  mail: "hallo@meugenom.com",
   date: new Date().toLocaleDateString("en-GB", {
     weekday: "long",
     month: "long",
