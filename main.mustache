@@ -1,0 +1,20 @@
+Dynamically generated stats for GitHub and Leetcode sites for README.md (In Progress)
+
+#### GitHub Statistics:
+
+![chart-bar](/assets/chart.svg)
+
+#### Github Stats:
+	Total Repositories : {{github.totalRepositories}}
+	Total Commits : {{github.totalCommits}}
+	Closed Issues: {{github.closedIssues}}
+	Contributions: {{github.contributions}}
+	Total PullRequests: {{github.pullRequests}}
+	Followers: {{github.followers}}
+
+[![LeetCode Stats All](https://img.shields.io/badge/LEETCODE%20SOLVED%20PROBLEMS%20%3A-{{leetcode.countAll}}-orange)](https://leetcode.com/meugenom/)
+[![LeetCode Stats Easy](https://img.shields.io/badge/{{leetcode.byDifficulty.easy.name}}%20%3A-{{leetcode.byDifficulty.easy.count}}-brightgreen)](https://leetcode.com/meugenom/)
+[![LeetCode Stats Medium](https://img.shields.io/badge/{{leetcode.byDifficulty.medium.name}}%20%3A-{{leetcode.byDifficulty.medium.count}}-yellow)](https://leetcode.com/meugenom/)
+[![LeetCode Stats Hard](https://img.shields.io/badge/{{leetcode.byDifficulty.hard.name}}%20%3A-{{leetcode.byDifficulty.hard.count}}-red)](https://leetcode.com/meugenom/)
+
+[![README build](https://github.com/meugenom/meugenom/actions/workflows/main.yaml/badge.svg)](https://github.com/meugenom/meugenom/actions/workflows/main.yaml)

@@ -1,0 +1,30 @@
+{
+  "name": "github-leetcode-stats",
+  "version": "0.0.1",
+  "description": "Github and Leetcode stats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meugenom/github-leetcode-stats.git"
+  },
+  "keywords": [
+    "github stats",
+    "leetcode stats",
+    "readme"
+  ],
+  "author": "meugenom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meugenom/github-leetcode-stats/issues"
+  },
+  "homepage": "https://github.com/meugenom/github-leetcode-stats#readme",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "axios": "^0.27.2"
+  }
+}
