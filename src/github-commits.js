@@ -63,7 +63,6 @@ const setData = async (res) => {
     let options = {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `bearer ${token}`,
       },
     };
     await axios
