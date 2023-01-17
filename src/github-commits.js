@@ -27,6 +27,9 @@ const setData = async (res) => {
 	}
 
   const get = async (username, token) => {
+
+	////Authorization: `bearer ${token}`,
+
     let body = {
       query: `
 			query {
@@ -63,8 +66,7 @@ const setData = async (res) => {
     let options = {
       headers: {
         "Content-Type": "application/json",
-        //Authorization: `bearer ${token}`,
-		Authorization :process.env.TOKEN,
+		Authorization :process.env.GITHUB_TOKEN,
       },
     };
     await axios
