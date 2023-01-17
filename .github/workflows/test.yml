@@ -1,10 +1,16 @@
-name: README build
+on: [push]
+
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    steps:
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "$GITHUB_TOKEN"
+  name: Hello world
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v2
+  - name: Write a multi-line message
+    run: |
+      echo This demo file shows a 
+      echo very basic and easy-to-understand workflow.
+      echo "Github token = ${GITHUB_TOKEN}"
