@@ -1,15 +1,19 @@
-Dynamically generated stats for GitHub and Leetcode sites for README.md (In Progress)
+### Dynamically generated stats for GitHub and Leetcode sites for README.md (In Progress)
+
+### ToDo:
+- More animated SVG elements
+- A description of how can it configure
 
 #### GitHub Statistics:
 
 ![chart-bar](/assets/chart.svg)
 
-#### Github Stats: (last update: Wednesday, 18 January at 13:18 CET)
+#### Github Stats: (last automatic update: Wednesday, 18 January at 14:23 CET)
 	Total Repositories : 16
-	Total Commits : 523
+	Total Commits : 525
 	Closed Issues: 48
 	Contributions: 0
-	Total PullRequests: 110
+	Total PullRequests: 111
 	Followers: 22
 
 [![LeetCode Stats All](https://img.shields.io/badge/LEETCODE%20SOLVED%20PROBLEMS%20%3A-137-orange)](https://leetcode.com/meugenom/)
