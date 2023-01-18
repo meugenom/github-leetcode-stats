@@ -1,5 +1,6 @@
 ### Dynamically generated stats for GitHub and Leetcode sites for README.md (In Progress)
 
+
 ### TODO:
 - More animated SVG elements
 - A description of how can it configure
@@ -14,7 +15,8 @@
 	Closed Issues: 48
 	Contributions: 0
 	Total PullRequests: 111
-	Followers: 21
+	Followers: 22
+
 
 [![LeetCode Stats All](https://img.shields.io/badge/LEETCODE%20SOLVED%20PROBLEMS%20%3A-137-orange)](https://leetcode.com/meugenom/)
 [![LeetCode Stats Easy](https://img.shields.io/badge/EASY%20%3A-67-brightgreen)](https://leetcode.com/meugenom/)
