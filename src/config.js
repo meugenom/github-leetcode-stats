@@ -1,8 +1,9 @@
 /**
  * configurator
  */
+
 module.exports = {
 	username: "meugenom",
-	token: "",
+	github_token: "",
   };
   
