@@ -6,11 +6,11 @@ const fs = require("fs");
 const MUSTACHE_MAIN_DIR = "./main.mustache";
 
 //own files
-const githubCommits = require("./src/github-commits");
-const githubLanguages = require("./src/github-languages")
+const githubCommits = require("./src/github_commits");
+const githubLanguages = require("./src/github_languages")
 const leetcode = require("./src/leetcode");
 const config = require("./src/config");
-const svg = require("./src/svg")
+const svgGeneratorLanguages = require("./src/svg_generator_circle_tails.js")
 const githubToken = process.env.GH_TOKEN;
 
 /**
@@ -18,9 +18,9 @@ const githubToken = process.env.GH_TOKEN;
  */
 //check github token
 if (!githubToken) {
-	throw new Error('GH_TOKEN is not defined');
+	throw new Error('GH_TOKEN is not defined, see .env or main.yaml in actions');
 }else{
-	config.token = githubToken;
+	config.github_token = githubToken;
 }
 
 //mustache metadata file
@@ -96,14 +96,14 @@ function generateLeetcodeInfo(info){
 //main
 async function main() {
 	
-	await githubCommits.get(config.username, config.token); //get info about github commits, repositories
+	await githubCommits.get(config.username, config.github_token); //get info about github commits, repositories
   	//await console.log(JSON.stringify(githubCommits.info));
   	await generateGithubCommitsInfo(githubCommits.info);
 
   	
-	//await githubLanguages.get(config.username, config.token); //get info about github most used languages
+	await githubLanguages.get(config.username, config.github_token); //get info about github most used languages
   	//await console.log(JSON.stringify(githubLanguages.info));
-	//await svg.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
+	await svgGeneratorLanguages.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
 	
 	await leetcode.get(config.username);
 	//await console.log(JSON.stringify(leetcode.info));
