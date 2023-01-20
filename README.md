@@ -8,13 +8,13 @@
 
 ![chart-bar](/assets/circle-tails.svg)
 
-#### Github Stats: (last automatic update: Thursday, 19 January at 19:12 CET)
+#### Github Stats: (last automatic update: Friday, 20 January at 01:51 CET)
 	Total Repositories : 16
 	Total Commits : 528
 	Closed Issues: 49
 	Contributions: 0
 	Total PullRequests: 112
-	Followers: 21
+	Followers: 20
 
 [![LeetCode Stats All](https://img.shields.io/badge/LEETCODE%20SOLVED%20PROBLEMS%20%3A-137-orange)](https://leetcode.com/meugenom/)
 [![LeetCode Stats Easy](https://img.shields.io/badge/EASY%20%3A-67-brightgreen)](https://leetcode.com/meugenom/)
