@@ -12,6 +12,7 @@ const leetcode = require("./src/leetcode");
 const config = require("./src/config");
 const svgGithubLanguages = require("./src/svg_github_sledge.js")
 const svgLeetcodeTotalInfo = require("./src/svg_leetcode_circle.js")
+const svgGithubTotalInfo = require("./src/svg_github_bicycle.js")
 const githubToken = process.env.GH_TOKEN;
 
 /**
@@ -54,6 +55,7 @@ function generateReadMe() {
   });
 }
 
+/*
 function generateGithubCommitsInfo(info){
 	DATA.github.totalRepositories = info.github.totalRepositories;
 	DATA.github.totalCommits = info.github.totalCommits;
@@ -65,13 +67,14 @@ function generateGithubCommitsInfo(info){
 	//need to know 
     //stargazers: 0,
 }
+*/
 
 //main
 async function main() {
 	
 	await githubCommits.get(config.username, config.github_token); //get info about github commits, repositories
   	//await console.log(JSON.stringify(githubCommits.info));
-  	await generateGithubCommitsInfo(githubCommits.info);
+	await svgGithubTotalInfo.generateSVG(githubCommits.info.github);
 
   	
 	await githubLanguages.get(config.username, config.github_token); //get info about github most used languages
