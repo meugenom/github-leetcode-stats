@@ -65,7 +65,7 @@ const values = {
 let content =
 `	<style>
 		.label {
-			font: bold 30px sans-serif;
+			font: bold 25px sans-serif;
 			color: #404040;
 			-webkit-text-stroke: 1px white;
 	  	}
