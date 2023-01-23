@@ -69,7 +69,12 @@
 	<g  stroke="#E6E2E1" fill="none" stroke-width="1" class="ground">
 		
 		<!-- 1 point-->
-		<line x1="100" y1="220" x2="100" y2="195"/>		
+		<line x1="100" y1="220" x2="100" y2="195"/>
+		<svg x="40" y="140" width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15ZM18 15V8C18 7.46957 17.7893 6.96086 17.4142 6.58579C17.0391 6.21071 16.5304 6 16 6H13M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#4a7cb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+		<text x="100" y="180" stroke-width="1" stroke="#4a7cb1" class="totals">Total PRs: 116</text>
+		
 
 		<!-- 2 point-->
 		<line x1="300" y1="220" x2="300" y2="190" />
@@ -93,6 +98,15 @@
 
 		<!-- 4 point-->
 		<line x1="900" y1="220" x2="900" y2="180" />
+		<svg x="840" y="110" width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    		<g>
+        		<path fill="none" d="M0 0h24v24H0z"/>
+        		<path fill="#4a7cb1" fill-rule="nonzero" d="M18 16v-2h1V4H6v10.035A3.53 3.53 0 0 1 6.5 14H8v2H6.5a1.5 1.5 0 0 0 0 3H10v2H6.5A3.5 3.5 0 0 1 3 17.5V5a3 3 0 0 1 3-3h14a1 1 0 0 1 1 1v17a1 1 0 0 1-1 1h-4v-2h3v-3h-1zM7 5h2v2H7V5zm0 3h2v2H7V8zm7 9v6h-2v-6H9l4-5 4 5h-3z"/>
+    		</g>
+		</svg>
+		<text x="900" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Total Commits: 533</text>
+
+
 		<!-- 5 point-->
 		<line x1="1200" y1="220" x2="1200" y2="175" />
 		<svg x="1140" y="110" width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
