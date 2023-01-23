@@ -1,8 +1,6 @@
-
 const fs = require("fs");
-const svgHeader = require("./svg_parts/header")
-const svgFooter = require("./svg_parts/footer")
-
+const svgHeader = require("./svg_github_sledge_parts/header")
+const svgFooter = require("./svg_github_sledge_parts/footer")
 
 //min lanuages, by default 6
 let minLanguages = 6;
@@ -32,7 +30,8 @@ const values = {
 	paths: 
 	{
 		radius: [125, 105, 85, 65, 45, 25],
-		startXY: [
+		startXY: //[X1,Y1]
+		[
 			[20,275],
 			[20,255],
 			[20,235],
@@ -40,7 +39,8 @@ const values = {
 			[20, 195],
 			[20, 175]
 		],
-		endXY: [
+		endXY: //[X2,Y2]
+		[
 			[20,25],
 			[20,45],
 			[20,65],
@@ -48,10 +48,9 @@ const values = {
 			[20, 105],
 			[20, 125]
 		]
-		
 	}
 	,
-	labels:  //[name]
+	labels:  //[name of the language]
 	[ 
 		["Java"],
 		["JavaScript"],
@@ -62,6 +61,7 @@ const values = {
 	]
 }
 
+//persistent content
 let content =
 `	<style>
 		.label {
@@ -106,7 +106,7 @@ let content =
 `;
 
 //declare 
-let contentPaths = ``
+let contentPaths = ``;
 let contentNames =  ``;
 let contentLines =  ``;
 
@@ -128,7 +128,7 @@ const generateSVG = async function (languages) {
 				contentNames +
 				svgFooter.footer;
 
-  await fs.writeFile("./assets/circle-tails.svg", out, (err) => {
+  await fs.writeFile("./assets/github-languages-sledge.svg", out, (err) => {
     if (err) {
       console.error(err);
     }
@@ -137,16 +137,17 @@ const generateSVG = async function (languages) {
 
 async function setLanguages(languages){
 
-	contentNames = `<g class="name">`;
-
+	contentNames = 
+	`<!--names of languages-->
+	 <g class="name">`;
 	contentLines = 
 	  `<!-- lines by default-->
 	   <g fill="none" stroke-width="20" class="line">`
 
-	//by y 
+	//Y coordinates of the point of the first label
 	let labelY = 280;
 
-	//the first language has very big percentage
+	//the first language has very big percentage, and goes as default
 	const procentageFactor = languages[0]["percentage"];
 	const maxLength = 550;
 
@@ -213,9 +214,8 @@ function calculatePaths (languages){
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
 	`;
 
-
 	for (let i = 0; i < minLanguages; i++) {
-		//percentage is as 100% is 360 grad
+		// need add +180 grad
 		let degrees = Math.round(languages[i]["percentage"]) + 180;
 		let degreesToRadians = (degrees * Math.PI)/180;
 

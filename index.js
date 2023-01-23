@@ -10,7 +10,8 @@ const githubCommits = require("./src/github_commits");
 const githubLanguages = require("./src/github_languages")
 const leetcode = require("./src/leetcode");
 const config = require("./src/config");
-const svgGeneratorLanguages = require("./src/svg_generator_circle_tails.js")
+const svgGithubLanguages = require("./src/svg_github_sledge.js")
+const svgLeetcodeTotalInfo = require("./src/svg_leetcode_circle.js")
 const githubToken = process.env.GH_TOKEN;
 
 /**
@@ -42,28 +43,7 @@ let DATA = {
     closedIssues: 0,
     followers: 0,
     stargazers: 0,
-  },
-  leetcode: {
-    countAll: 0,
-    submissionsAll: 0,
-    byDifficulty: {
-      easy: {
-        name: "EASY",
-        count: 0,
-        submissions: 0,
-      },
-      medium: {
-        name: "MEDIUM",
-        count: 0,
-        submissions: 0,
-      },
-      hard: {
-        name: "HARD",
-        count: 0,
-        submissions: 0,
-      },
-    },
-  },
+  }
 };
 
 function generateReadMe() {
@@ -86,13 +66,6 @@ function generateGithubCommitsInfo(info){
     //stargazers: 0,
 }
 
-function generateLeetcodeInfo(info){
-	DATA.leetcode.countAll = info.countAll;
-	DATA.leetcode.byDifficulty.easy.count = info.byDifficulty.easy.count;
-	DATA.leetcode.byDifficulty.medium.count = info.byDifficulty.medium.count;
-	DATA.leetcode.byDifficulty.hard.count = info.byDifficulty.hard.count;
-}
-
 //main
 async function main() {
 	
@@ -103,15 +76,13 @@ async function main() {
   	
 	await githubLanguages.get(config.username, config.github_token); //get info about github most used languages
   	//await console.log(JSON.stringify(githubLanguages.info));
-	await svgGeneratorLanguages.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
+	await svgGithubLanguages.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
 	
 	await leetcode.get(config.username);
 	//await console.log(JSON.stringify(leetcode.info));
-	await generateLeetcodeInfo(leetcode.info.leetcode);
-
+	await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode);
     
 	await generateReadMe(); //generate mustache template
-  	
   
 }
 
