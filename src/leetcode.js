@@ -6,61 +6,76 @@ const axios = require("axios").default;
 
 let info = {
 	leetcode: {
-		countAll: 0,
-		submissionsAll: 0,
-		byDifficulty: {
-		  easy: {
-			name: "EASY",
-			count: 0,
-			submissions: 0,
-		  },
-		  medium: {
-			name: "MEDIUM",
-			count: 0,
-			submissions: 0,
-		  },
-		  hard: {
-			name: "HARD",
-			count: 0,
-			submissions: 0,
-		  },
-		},
-	  }
-	};
+		allQuestionsStats: 
+		[
+			{difficulty: "All", count: 0},
+			{difficulty: "Easy", count: 0},
+			{difficulty: "Medium", count: 0},
+			{difficulty: "Hard", count: 0}
+		],
+		problemSolvedStats: 
+		[
+			{difficulty: "Easy", percentage: 0},
+			{difficulty: "Medium", percentage: 0},
+			{difficulty: "Hard", percentage: 0}
+		],
+		acSubmissionNum: 
+		[
+			{difficulty: "All", count: 0},
+			{difficulty: "Easy", count: 0},
+			{difficulty: "Medium", count: 0},
+			{difficulty: "Hard", count: 0}
+		]
+	}
+};
 
 const setData = async (res) => {
 	
 	let object = JSON.parse(res)["data"];
 
-	//console.log(object)
-    
-	let arr = object["matchedUser"]["submitStats"]["acSubmissionNum"];
+	//console.log(object);
   
-	info.leetcode.countAll = arr[0]["count"];
-	info.leetcode.submissionsAll = arr[0]["submissions"];
-	info.leetcode.byDifficulty.easy.count = arr[1]["count"];
-	info.leetcode.byDifficulty.easy.submissions = arr[1]["submissions"];
-	info.leetcode.byDifficulty.medium.count = arr[2]["count"];
-	info.leetcode.byDifficulty.medium.submissions = arr[2]["submissions"];
-	info.leetcode.byDifficulty.hard.count = arr[3]["count"];
-	info.leetcode.byDifficulty.hard.submissions = arr[3]["submissions"];
-  
+	info.leetcode.allQuestionsStats[0].count = object.allQuestionsStats[0].count;
+	info.leetcode.allQuestionsStats[1].count = object.allQuestionsStats[1].count;
+	info.leetcode.allQuestionsStats[2].count = object.allQuestionsStats[2].count;
+	info.leetcode.allQuestionsStats[3].count = object.allQuestionsStats[3].count;
+
+	let acSubmissionNum = object["matchedUser"]["submitStats"]["acSubmissionNum"];
+	info.leetcode.acSubmissionNum[0].count = acSubmissionNum[0].count;
+	info.leetcode.acSubmissionNum[1].count = acSubmissionNum[1].count;
+	info.leetcode.acSubmissionNum[2].count = acSubmissionNum[2].count;
+	info.leetcode.acSubmissionNum[3].count = acSubmissionNum[3].count;
+ 	
+	let problemSolvedStats = object["matchedUser"]["problemSolvedStats"];
+	info.leetcode.problemSolvedStats[0].percentage = problemSolvedStats[0].percentage;
+	info.leetcode.problemSolvedStats[1].percentage = problemSolvedStats[1].percentage;
+	info.leetcode.problemSolvedStats[2].percentage = problemSolvedStats[2].percentage;
+
+	//console.log(JSON.stringify(info))
+
 	}
 
   const get = async (username) => {
     let body = {
 		query: `
-			{
+			{	
 				matchedUser(username: "${username}") {
 					username
 					submitStats: submitStatsGlobal {
 					  acSubmissionNum {
 						difficulty
 						count
-						submissions
 					  }
 					}
-				  }
+					problemSolvedStats: problemsSolvedBeatsStats {
+						difficulty
+						percentage
+					}
+				  }				  
+				  allQuestionsStats: allQuestionsCount {
+					difficulty
+					count
+				}
 			}
 			`,
 		variables: {},
@@ -74,7 +89,7 @@ const setData = async (res) => {
 	  .post("https://leetcode.com/graphql", body, options)
 	  .then(async (response) => {
 		//console.log(JSON.stringify(response.data));
-		setData(JSON.stringify(response.data));
+		setData(JSON.stringify(response.data)); 
 	  });
   };
 
