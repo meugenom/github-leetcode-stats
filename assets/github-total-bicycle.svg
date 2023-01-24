@@ -46,6 +46,7 @@
 
 .bicycle {
 	animation: moving 0.5s ease-in-out infinite forwards;
+	animation-direction: alternate-reverse;
 }
 
 @keyframes moving {
@@ -75,7 +76,7 @@
 	<path d="M18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15ZM18 15V8C18 7.46957 17.7893 6.96086 17.4142 6.58579C17.0391 6.21071 16.5304 6 16 6H13M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#4a7cb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-		<text x="60" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total PRs: 119</text>
+		<text x="60" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total PRs: 120</text>
 		
 
 		<!-- 2 point: Issues-->
@@ -114,7 +115,7 @@
     </g>
 </svg>
 
-		<text x="830" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total Commits: 542</text>
+		<text x="830" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total Commits: 548</text>
 
 
 		<!-- 5 point-->
@@ -177,7 +178,7 @@
 		<path stroke="#f4d327" d="M1.537,9.488a1,1,0,0,0,.326,1.041l4.805,3.963-1.515,6.79a1,1,0,0,0,1.56,1.03L12,18.509l5.287,3.8a1,1,0,0,0,1.56-1.03l-1.515-6.79,4.805-3.963a1,1,0,0,0-.492-1.761l-5.817-.849L12.9,2.053a1.042,1.042,0,0,0-1.79,0L8.172,7.919l-5.817.849A1,1,0,0,0,1.537,9.488Zm7.441.335a1,1,0,0,0,.75-.542L12,4.736l2.272,4.545a1,1,0,0,0,.75.542l4.1.6L15.586,13.34a1,1,0,0,0-.339.989l1.076,4.826-3.739-2.69a1,1,0,0,0-1.168,0l-3.739,2.69,1.076-4.826a1,1,0,0,0-.339-.989L4.876,10.421Z"/>
 </svg>
 
-		<text x="1700" y="145" stroke-width="1" stroke="#4a7cb1" class="totals">Total Stars Earned: 10</text>
+		<text x="1700" y="145" stroke-width="1" stroke="#4a7cb1" class="totals">Total Stars Earned: 11</text>
 	</g>
 <!-- tyres-->
 <g stroke="#4B7196" fill="white" stroke-width="5">

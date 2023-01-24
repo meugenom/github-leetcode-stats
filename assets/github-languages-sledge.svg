@@ -48,11 +48,11 @@
 	</g>
 <!-- lines by default-->
 	   <g fill="none" stroke-width="20" class="line"><line x1="550" y1="275" x2="20" y2="275" stroke="#404040" />
-		<line x1="339" y1="255" x2="20" y2="255" stroke="#93648D" />
-		<line x1="289" y1="235" x2="20" y2="235" stroke="#4CC3D9" />
+		<line x1="340" y1="255" x2="20" y2="255" stroke="#93648D" />
+		<line x1="291" y1="235" x2="20" y2="235" stroke="#4CC3D9" />
 		<line x1="56" y1="215" x2="20" y2="215" stroke="#7BC8A4" />
 		<line x1="54" y1="195" x2="20" y2="195" stroke="#FFC65D" />
-		<line x1="51" y1="175" x2="20" y2="175" stroke="#F16745" />
+		<line x1="52" y1="175" x2="20" y2="175" stroke="#F16745" />
 		</g>
 	
 	<!-- changed paths -->
@@ -66,12 +66,12 @@
 		
 	</g>
 	<!--names of languages-->
-	 <g class="name"> <text x="560" y="280" fill="#404040" >Java (39.2%)</text>
-		 <text x="349" y="260" fill="#93648D" >TypeScript (24.2%)</text>
-		 <text x="299" y="240" fill="#4CC3D9" >JavaScript (20.6%)</text>
+	 <g class="name"> <text x="560" y="280" fill="#404040" >Java (39.1%)</text>
+		 <text x="350" y="260" fill="#93648D" >TypeScript (24.2%)</text>
+		 <text x="301" y="240" fill="#4CC3D9" >JavaScript (20.7%)</text>
 		 <text x="66" y="220" fill="#7BC8A4" >CSS (4%)</text>
 		 <text x="64" y="200" fill="#FFC65D" >Sass (3.9%)</text>
-		 <text x="61" y="180" fill="#F16745" >HTML (3.7%)</text>
+		 <text x="62" y="180" fill="#F16745" >HTML (3.7%)</text>
 		</g>
 	
 <g class="label"> 
