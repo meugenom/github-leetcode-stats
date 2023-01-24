@@ -49,9 +49,9 @@
 <!-- lines by default-->
 	   <g fill="none" stroke-width="20" class="line"><line x1="550" y1="275" x2="20" y2="275" stroke="#404040" />
 		<line x1="339" y1="255" x2="20" y2="255" stroke="#93648D" />
-		<line x1="253" y1="235" x2="20" y2="235" stroke="#4CC3D9" />
-		<line x1="56" y1="215" x2="20" y2="215" stroke="#7BC8A4" />
-		<line x1="54" y1="195" x2="20" y2="195" stroke="#FFC65D" />
+		<line x1="248" y1="235" x2="20" y2="235" stroke="#4CC3D9" />
+		<line x1="55" y1="215" x2="20" y2="215" stroke="#7BC8A4" />
+		<line x1="55" y1="195" x2="20" y2="195" stroke="#FFC65D" />
 		<line x1="51" y1="175" x2="20" y2="175" stroke="#F16745" />
 		</g>
 	
@@ -59,18 +59,18 @@
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
 	<path d="M 20 275 A 125 125 45 0 1 -75 69" stroke="#404040"/>
 		<path d="M 20 255 A 105 105 45 0 1 -75 105" stroke="#93648D"/>
-		<path d="M 20 235 A 85 85 45 0 1 -60 122" stroke="#4CC3D9"/>
+		<path d="M 20 235 A 85 85 45 0 1 -60 123" stroke="#4CC3D9"/>
 		<path d="M 20 215 A 65 65 45 0 1 -44 145" stroke="#7BC8A4"/>
 		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="#FFC65D"/>
 		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="#F16745"/>
 		
 	</g>
 	<!--names of languages-->
-	 <g class="name"> <text x="560" y="280" fill="#404040" >Java (40.2%)</text>
-		 <text x="349" y="260" fill="#93648D" >TypeScript (24.8%)</text>
-		 <text x="263" y="240" fill="#4CC3D9" >JavaScript (18.5%)</text>
-		 <text x="66" y="220" fill="#7BC8A4" >CSS (4.1%)</text>
-		 <text x="64" y="200" fill="#FFC65D" >Sass (4%)</text>
+	 <g class="name"> <text x="560" y="280" fill="#404040" >Java (40.3%)</text>
+		 <text x="349" y="260" fill="#93648D" >TypeScript (24.9%)</text>
+		 <text x="258" y="240" fill="#4CC3D9" >JavaScript (18.2%)</text>
+		 <text x="65" y="220" fill="#7BC8A4" >CSS (4.1%)</text>
+		 <text x="65" y="200" fill="#FFC65D" >Sass (4.1%)</text>
 		 <text x="61" y="180" fill="#F16745" >HTML (3.8%)</text>
 		</g>
 	
