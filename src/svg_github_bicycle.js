@@ -75,7 +75,7 @@ function setInfo(info){
 		<!-- 7 point-->
 		<line x1="1800" y1="220" x2="1800" y2="165" />
 		${star.star}
-		<text x="1700" y="145" stroke-width="1" stroke="#4a7cb1" class="totals">Total Stars Earned: In Progress</text>
+		<text x="1700" y="145" stroke-width="1" stroke="#4a7cb1" class="totals">Total Stars Earned: ${info["totalStargazers"]}</text>
 	</g>`
 }
 

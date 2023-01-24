@@ -11,7 +11,8 @@ let info = {
 		contributions: 0,
 		pullRequests: 0,
 		closedIssues: 0,
-		followers: 0
+		followers: 0,
+		totalStargazers: 0,
 	  },
 	};
 
@@ -24,6 +25,18 @@ const setData = async (res) => {
     info.github.pullRequests =  object["user"]["pullRequests"]["totalCount"],
     info.github.closedIssues =  object["user"]["closedIssues"]["totalCount"],
     info.github.followers =  object["user"]["followers"]["totalCount"]
+
+	//calculate sum of stargazers
+	//console.log(object["user"]["repositories"]["edges"])
+	let sumStargazers = 0;
+	const nodes = object["user"]["repositories"]["edges"]
+	nodes.forEach((node)=>{
+		//console.log(node["node"]["stargazers"]["totalCount"]);
+		sumStargazers = sumStargazers + node["node"]["stargazers"]["totalCount"];
+	})
+
+	info.github.totalStargazers =  sumStargazers;
+
 	}
 
   const get = async (username, token) => {
@@ -53,8 +66,20 @@ const setData = async (res) => {
 			  followers {
 				totalCount
 			  }
-			  repositories(ownerAffiliations: OWNER) {
+			  repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
 				totalCount
+				edges {
+				  cursor
+				  node {
+					name
+					stargazers {
+					  totalCount
+					}
+					watchers {
+					  totalCount	
+					}
+				  }
+				}
 			  }
 			}
 		  }
