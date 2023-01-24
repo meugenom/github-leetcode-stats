@@ -32,7 +32,7 @@ const footer = `
 </g>
 
 <g class="label"> 
-	<text x="200" y="50" fill="#4a7cb1" >Github Total Stats:</text>
+	<text x="200" y="30" fill="#4a7cb1" >Github Total Stats:</text>
 </g>
 
 </svg>`
