@@ -46,6 +46,7 @@ const header = `
 
 .bicycle {
 	animation: moving 0.5s ease-in-out infinite forwards;
+	animation-direction: alternate-reverse;
 }
 
 @keyframes moving {
