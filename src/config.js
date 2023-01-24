@@ -3,7 +3,9 @@
  */
 
 module.exports = {
-	username: "meugenom",
-	github_token: "",
-  };
-  
+	username: {
+		github: "meugenom",
+		leetcode: "meugenom"
+	},
+	github_token: ""
+};
