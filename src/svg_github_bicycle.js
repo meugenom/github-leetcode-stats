@@ -2,6 +2,15 @@ const fs = require("fs");
 const svgHeader = require("./svg_github_bicycle_total_parts/header")
 const svgFooter = require("./svg_github_bicycle_total_parts/footer")
 
+//icons
+const star = require("./svg_github_bicycle_total_parts/star")
+const followers = require("./svg_github_bicycle_total_parts/followers")
+const repositories = require("./svg_github_bicycle_total_parts/repositories")
+const commits = require("./svg_github_bicycle_total_parts/commits")
+const contributions = require("./svg_github_bicycle_total_parts/contributions")
+const issues = require("./svg_github_bicycle_total_parts/issues")
+const pullRequests = require("./svg_github_bicycle_total_parts/pullRequests")
+
 //declarations
 let out = svgHeader.header;
 
@@ -27,97 +36,46 @@ function setInfo(info){
 	<!--moved background-->	
 	<g  stroke="#E6E2E1" fill="none" stroke-width="1" class="ground">
 		
-		<!-- 1 point-->
+		<!-- 1 point: pullRequests-->
 		<line x1="100" y1="220" x2="100" y2="195"/>
-		<svg x="40" y="140" width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15ZM18 15V8C18 7.46957 17.7893 6.96086 17.4142 6.58579C17.0391 6.21071 16.5304 6 16 6H13M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#4a7cb1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
-		<text x="100" y="180" stroke-width="1" stroke="#4a7cb1" class="totals">Total PRs: ${info["pullRequests"]}</text>
+		${pullRequests.pullRequests}
+		<text x="60" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total PRs: ${info["pullRequests"]}</text>
 		
 
-		<!-- 2 point-->
+		<!-- 2 point: Issues-->
 		<line x1="300" y1="220" x2="300" y2="190" />
-		<svg x="240" y="110" fill="#4a7cb1" width="60px" height="60px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon">
-  			<path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72-112c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48zm400-188h-59.3c-2.6 0-5 1.2-6.5 3.3L763.7 538.1l-49.9-68.8a7.92 7.92 0 0 0-6.5-3.3H648c-6.5 0-10.3 7.4-6.5 12.7l109.2 150.7a16.1 16.1 0 0 0 26 0l165.8-228.7c3.8-5.3 0-12.7-6.5-12.7zm-44 306h-64.2c-5.5 0-10.6 2.9-13.6 7.5a352.2 352.2 0 0 1-49.8 62.2A355.92 355.92 0 0 1 651.1 840a355 355 0 0 1-138.7 27.9c-48.1 0-94.8-9.4-138.7-27.9a355.92 355.92 0 0 1-113.3-76.3A353.06 353.06 0 0 1 184 650.5c-18.6-43.8-28-90.5-28-138.5s9.4-94.7 28-138.5c17.9-42.4 43.6-80.5 76.4-113.2 32.8-32.7 70.9-58.4 113.3-76.3a355 355 0 0 1 138.7-27.9c48.1 0 94.8 9.4 138.7 27.9 42.4 17.9 80.5 43.6 113.3 76.3 19 19 35.6 39.8 49.8 62.2 2.9 4.7 8.1 7.5 13.6 7.5H892c6 0 9.8-6.3 7.2-11.6C828.8 178.5 684.7 82 517.7 80 278.9 77.2 80.5 272.5 80 511.2 79.5 750.1 273.3 944 512.4 944c169.2 0 315.6-97 386.7-238.4A8 8 0 0 0 892 694z"/>
-		</svg>
-		<text x="300" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Total Issues: ${info["closedIssues"]}</text>
+		${issues.issues}
+		<text x="250" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total Issues: ${info["closedIssues"]}</text>
 		
 
 		<!-- 3 point-->
 		<line x1="600" y1="220" x2="600" y2="185" />
-		<svg x="540" y="110" fill="#4a7cb1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 		width="60px" height="60px" viewBox="0 0 571.316 571.315"
-	 		xml:space="preserve">
-			<g>
-				<path d="M159.858,176.916c0,26.289-21.312,47.6-47.6,47.6c-26.289,0-47.6-21.311-47.6-47.6c0-26.289,21.311-47.6,47.6-47.6C138.546,129.316,159.858,150.627,159.858,176.916z M411.458,176.916c0,26.289,21.312,47.6,47.601,47.6c26.288,0,47.6-21.311,47.6-47.6c0-26.289-21.312-47.6-47.6-47.6C432.769,129.316,411.458,150.627,411.458,176.916zM146.258,394.516V281.942c0-20.448-16.579-37.026-37.026-37.026h-0.748c-20.448,0-37.026,16.578-37.026,37.026v119.374c0,22.535,18.265,40.801,40.8,40.801h61.2c7.514,0,13.6,6.086,13.6,13.6v95.2c0,11.268,9.132,20.399,20.4,20.399h6.8c11.268,0,20.4-9.132,20.4-20.399V435.315c0-22.535-18.265-40.8-40.8-40.8H146.258z M462.832,244.916h-0.748c-20.447,0-37.025,16.578-37.025,37.026v112.574h-47.601c-22.535,0-40.8,18.265-40.8,40.8v112.438c0,13.015,10.547,23.562,23.562,23.562h0.476c13.015,0,23.562-10.547,23.562-23.562v-92.038c0-7.514,6.086-13.6,13.601-13.6h61.2c22.535,0,40.8-18.266,40.8-40.801V281.942C499.858,261.494,483.279,244.916,462.832,244.916z M397.858,346.916v-20.4c0-3.753-3.047-6.8-6.8-6.8h-210.8c-3.754,0-6.8,3.047-6.8,6.8v20.4c0,3.753,3.046,6.8,6.8,6.8h210.8C394.811,353.716,397.858,350.669,397.858,346.916z M267.305,0c-49.572,0-89.753,31.804-89.753,71.033c0,23.372,14.328,44.043,36.339,56.991c-2.156,11.805-9.01,25.71-18.591,35.292c23.406-1.748,44.003-8.459,57.494-22.263c4.739,0.612,9.567,1.013,14.518,1.013c49.572,0,89.753-31.804,89.753-71.033C357.065,31.804,316.87,0,267.305,0z M225.226,85.055c-7.745,0-14.021-6.276-14.021-14.021s6.276-14.022,14.021-14.022s14.021,6.277,14.021,14.022S232.971,85.055,225.226,85.055zM267.305,85.055c-7.746,0-14.022-6.276-14.022-14.021s6.276-14.022,14.022-14.022c7.745,0,14.021,6.277,14.021,14.022S275.05,85.055,267.305,85.055z M309.376,85.055c-7.745,0-14.021-6.276-14.021-14.021s6.276-14.022,14.021-14.022s14.021,6.277,14.021,14.022S317.122,85.055,309.376,85.055z"/>
-			</g>
-		</svg>
-		<text x="600" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Contributions: ${info["contributions"]}</text>
+		${contributions.contributions}
+		<text x="555" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Contributions: ${info["contributions"]}</text>
 		
 
 		<!-- 4 point-->
 		<line x1="900" y1="220" x2="900" y2="180" />
-		<svg x="840" y="110" width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    		<g>
-        		<path fill="none" d="M0 0h24v24H0z"/>
-        		<path fill="#4a7cb1" fill-rule="nonzero" d="M18 16v-2h1V4H6v10.035A3.53 3.53 0 0 1 6.5 14H8v2H6.5a1.5 1.5 0 0 0 0 3H10v2H6.5A3.5 3.5 0 0 1 3 17.5V5a3 3 0 0 1 3-3h14a1 1 0 0 1 1 1v17a1 1 0 0 1-1 1h-4v-2h3v-3h-1zM7 5h2v2H7V5zm0 3h2v2H7V8zm7 9v6h-2v-6H9l4-5 4 5h-3z"/>
-    		</g>
-		</svg>
-		<text x="900" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Total Commits: ${info["totalCommits"]}</text>
+		${commits.commits}
+		<text x="830" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Total Commits: ${info["totalCommits"]}</text>
 
 
 		<!-- 5 point-->
 		<line x1="1200" y1="220" x2="1200" y2="175" />
-		<svg x="1140" y="110" width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" stroke="#4a7cb1" stroke-linejoin="round"/>
-		</svg>
-		<text x="1200" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Github Repositories: ${info["totalRepositories"]}</text>
+		${repositories.repositories}
+		<text x="1120" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Github Repositories: ${info["totalRepositories"]}</text>
 
 		
 		<!-- 6 point-->
 		<line x1="1500" y1="220" x2="1500" y2="170" />
-		<svg x="1440" y="110" width="60px" height="60px" fill="#4a7cb1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 		viewBox="0 0 60 60" xml:space="preserve">
-			<g>
-				<g>
-					<rect x="6" y="23" width="2" height="33"/>
-					<rect x="18" y="23" width="2" height="33"/>
-					<path d="M12,13h2c2.8,0,5-2.2,5-5V5c0-2.8-2.2-5-5-5h-2C9.2,0,7,2.2,7,5v3C7,10.8,9.2,13,12,13z M9,5c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3v3c0,1.7-1.3,3-3,3h-2c-1.7,0-3-1.3-3-3V5z"/>
-					<polygon points="10,38 12,38 12,56 14,56 14,38 16,38 16,36 10,36 "/>
-					<path d="M23,36v20h2V36V23v-1c0-3.9-3.1-7-7-7H8c-3.9,0-7,3.1-7,7v14h2V22c0-2.8,2.2-5,5-5h10c2.8,0,5,2.2,5,5v1V36z"/>
-					<rect x="35" y="23" width="2" height="33"/>
-					<path d="M29,13h2c2.8,0,5-2.2,5-5V5c0-2.8-2.2-5-5-5h-2c-2.8,0-5,2.2-5,5v3C24,10.8,26.2,13,29,13z M26,5c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3v3c0,1.7-1.3,3-3,3h-2c-1.7,0-3-1.3-3-3V5z"/>
-					<polygon points="33,38 33,36 27,36 27,38 29,38 29,56 31,56 31,38 		"/>
-					<path d="M52,15H42v2h10c2.8,0,5,2.2,5,5v14h2V22C59,18.1,55.9,15,52,15z"/>
-					<path d="M40,36v20h2V36V23v-1c0-3.9-3.1-7-7-7H25v2h10c2.8,0,5,2.2,5,5v1V36z"/>
-					<rect x="52" y="23" width="2" height="33"/>
-					<path d="M46,13h2c2.8,0,5-2.2,5-5V5c0-2.8-2.2-5-5-5h-2c-2.8,0-5,2.2-5,5v3C41,10.8,43.2,13,46,13z M43,5c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3v3c0,1.7-1.3,3-3,3h-2c-1.7,0-3-1.3-3-3V5z"/>
-					<polygon points="50,38 50,36 44,36 44,38 46,38 46,56 48,56 48,38 		"/>
-					<rect x="1" y="58" width="2" height="2"/>
-					<rect x="5" y="58" width="2" height="2"/>
-					<rect x="9" y="58" width="2" height="2"/>
-					<rect x="13" y="58" width="2" height="2"/>
-					<rect x="17" y="58" width="2" height="2"/>
-					<rect x="21" y="58" width="2" height="2"/>
-					<rect x="25" y="58" width="2" height="2"/>
-					<rect x="29" y="58" width="2" height="2"/>
-					<rect x="33" y="58" width="2" height="2"/>
-					<rect x="37" y="58" width="2" height="2"/>
-					<rect x="41" y="58" width="2" height="2"/>
-					<rect x="45" y="58" width="2" height="2"/>
-					<rect x="49" y="58" width="2" height="2"/>
-					<rect x="53" y="58" width="2" height="2"/>
-					<rect x="57" y="58" width="2" height="2"/>
-				</g>
-			</g>
-		</svg>
-		<text x="1505" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Followers: ${info["followers"]}</text>
+		${followers.followers}
+		<text x="1455" y="140" stroke-width="1" stroke="#4a7cb1" class="totals">Followers: ${info["followers"]}</text>
 
 
 		<!-- 7 point-->
 		<line x1="1800" y1="220" x2="1800" y2="165" />
-		<svg x="1740" y="110" fill="#4a7cb1" width="60px" height="60px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.537,9.488a1,1,0,0,0,.326,1.041l4.805,3.963-1.515,6.79a1,1,0,0,0,1.56,1.03L12,18.509l5.287,3.8a1,1,0,0,0,1.56-1.03l-1.515-6.79,4.805-3.963a1,1,0,0,0-.492-1.761l-5.817-.849L12.9,2.053a1.042,1.042,0,0,0-1.79,0L8.172,7.919l-5.817.849A1,1,0,0,0,1.537,9.488Zm7.441.335a1,1,0,0,0,.75-.542L12,4.736l2.272,4.545a1,1,0,0,0,.75.542l4.1.6L15.586,13.34a1,1,0,0,0-.339.989l1.076,4.826-3.739-2.69a1,1,0,0,0-1.168,0l-3.739,2.69,1.076-4.826a1,1,0,0,0-.339-.989L4.876,10.421Z"/></svg>
-		<text x="1800" y="150" stroke-width="1" stroke="#4a7cb1" class="totals">Total Stars Earned: In Progress</text>
+		${star.star}
+		<text x="1700" y="145" stroke-width="1" stroke="#4a7cb1" class="totals">Total Stars Earned: In Progress</text>
 	</g>`
 }
 
