@@ -77,14 +77,17 @@ let content =
 		.line {
 			stroke-dasharray: 1000;
 			stroke-dashoffset: 1000;
-			animation: dash 3s linear forwards;
+			animation: dash 3.5s ease-in-out forwards;	
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
 		}
 
 		.path {
 			stroke-dasharray: 1000;
 			stroke-dashoffset: 1000;
-			animation: dash 3s linear forwards;
-			animation-delay: 2s;
+			animation: dash 3.5s ease-in-out forwards;	
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
 		}
 		  
 		@keyframes dash {
@@ -158,7 +161,7 @@ async function setLanguages(languages){
 
 		//every line
 		contentLines = contentLines + 
-		`<line x1="${currentWidth}" y1="${values.lines[i][1]}" x2="${values.lines[i][2]}" y2="${values.lines[i][3]}" stroke="${values.colors[i]}" />
+		`<line x2="${currentWidth}" y2="${values.lines[i][1]}" x1="${values.lines[i][2]}" y1="${values.lines[i][3]}" stroke="${values.colors[i]}" />
 		`
 		//every label
 		values.labels[i] = languages[i]["name"] + " ("+ languages[i]["percentage"]+"%)";

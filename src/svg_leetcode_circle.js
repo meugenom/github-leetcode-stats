@@ -34,8 +34,9 @@ let content =
 .line {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	animation: dash 1s linear forwards;
-	animation-delay: 3s;
+	animation: dash 3.5s ease-in-out forwards;	
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
 }
 
 .totalSum {
@@ -49,8 +50,9 @@ let content =
 .path {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	animation: dash 2s linear forwards;
-	animation-delay: 2s
+	animation: dash 3.5s ease-in-out forwards;	
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
 }
   
 @keyframes dash {
