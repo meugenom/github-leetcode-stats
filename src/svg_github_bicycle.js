@@ -38,7 +38,7 @@ function setInfo(info){
 		
 		<!-- 1 point: pullRequests-->
 		<line x1="0" y1="220" x2="0" y2="165" stroke="#fee08b" stroke-width="2"/>
-		<circle cx="300" cy="165" r="5" stroke="#fee08b" fill="#fee08b" />
+		<circle cx="0" cy="165" r="5" stroke="#fee08b" fill="#fee08b" />
 		${pullRequests.pullRequests}
 		<text x="-40" y="145" stroke-width="1" stroke="#3288bd" fill="#3288bd" class="totals">Total PRs: ${info["pullRequests"]}</text>
 		
