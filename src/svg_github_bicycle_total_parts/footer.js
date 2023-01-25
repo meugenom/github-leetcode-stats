@@ -1,6 +1,6 @@
 const footer = `
 <!-- tyres-->
-<g stroke="#4B7196" fill="white" stroke-width="5">
+<g stroke="#3288bd" fill="white" stroke-width="5">
 	<circle cx="250" cy="235" r="40"/>
 	<circle cx="380" cy="235" r="40" />
 	
@@ -9,12 +9,12 @@ const footer = `
 </g>
 
 <!--needles-->
-<g fill="none" stroke-width="3" stroke-linecap="round" stroke="#4B7196" class="path">
+<g fill="none" stroke-width="3" stroke-linecap="round" stroke="#3288bd" class="path">
 	<circle cx="250" cy="235" r="30"/>
 	<circle cx="380" cy="235" r="30"/>
 </g>
 <!--bicycle-->
-<g fill="none" stroke-width="5" stroke-linecap="round" stroke="#F96A93" class="bicycle">
+<g fill="none" stroke-width="5" stroke-linecap="round" stroke="#d53e4f" class="bicycle">
 
 	<line x1="250" y1="235" x2="280" y2="155" />
 	<line x1="275" y1="175" x2="320" y2="235" />
@@ -32,7 +32,7 @@ const footer = `
 </g>
 
 <g class="label"> 
-	<text x="200" y="30" fill="#4a7cb1" >Github Total Stats:</text>
+	<text x="200" y="30" fill="#3288bd" >Github Total Stats:</text>
 </g>
 
 </svg>`
