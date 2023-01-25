@@ -1,5 +1,5 @@
 const contributions = `
-<svg x="560" y="40" fill="#4a7cb1" version="1.1" id="Ext" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg x="560" y="40" fill="#f46d43" version="1.1" id="Ext" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	width="80px" height="80px" viewBox="0 0 571.316 571.315"
 	xml:space="preserve">
 	<g>
