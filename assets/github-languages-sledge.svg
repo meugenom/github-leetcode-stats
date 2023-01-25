@@ -20,14 +20,17 @@
 		.line {
 			stroke-dasharray: 1000;
 			stroke-dashoffset: 1000;
-			animation: dash 3s linear forwards;
+			animation: dash 3.5s ease-in-out forwards;	
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
 		}
 
 		.path {
 			stroke-dasharray: 1000;
 			stroke-dashoffset: 1000;
-			animation: dash 3s linear forwards;
-			animation-delay: 2s;
+			animation: dash 3.5s ease-in-out forwards;	
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
 		}
 		  
 		@keyframes dash {
@@ -47,12 +50,12 @@
   		<circle cx="20" cy="150" r="25" />
 	</g>
 <!-- lines by default-->
-	   <g fill="none" stroke-width="20" class="line"><line x1="550" y1="275" x2="20" y2="275" stroke="#404040" />
-		<line x1="339" y1="255" x2="20" y2="255" stroke="#93648D" />
-		<line x1="291" y1="235" x2="20" y2="235" stroke="#4CC3D9" />
-		<line x1="56" y1="215" x2="20" y2="215" stroke="#7BC8A4" />
-		<line x1="54" y1="195" x2="20" y2="195" stroke="#FFC65D" />
-		<line x1="52" y1="175" x2="20" y2="175" stroke="#F16745" />
+	   <g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="#404040" />
+		<line x2="339" y2="255" x1="20" y1="255" stroke="#93648D" />
+		<line x2="293" y2="235" x1="20" y1="235" stroke="#4CC3D9" />
+		<line x2="56" y2="215" x1="20" y1="215" stroke="#7BC8A4" />
+		<line x2="55" y2="195" x1="20" y1="195" stroke="#FFC65D" />
+		<line x2="52" y2="175" x1="20" y1="175" stroke="#F16745" />
 		</g>
 	
 	<!-- changed paths -->
@@ -66,11 +69,11 @@
 		
 	</g>
 	<!--names of languages-->
-	 <g class="name"> <text x="560" y="280" fill="#404040" >Java (39.1%)</text>
+	 <g class="name"> <text x="560" y="280" fill="#404040" >Java (39%)</text>
 		 <text x="349" y="260" fill="#93648D" >TypeScript (24.1%)</text>
-		 <text x="301" y="240" fill="#4CC3D9" >JavaScript (20.7%)</text>
+		 <text x="303" y="240" fill="#4CC3D9" >JavaScript (20.8%)</text>
 		 <text x="66" y="220" fill="#7BC8A4" >CSS (4%)</text>
-		 <text x="64" y="200" fill="#FFC65D" >Sass (3.9%)</text>
+		 <text x="65" y="200" fill="#FFC65D" >Sass (3.9%)</text>
 		 <text x="62" y="180" fill="#F16745" >HTML (3.7%)</text>
 		</g>
 	
