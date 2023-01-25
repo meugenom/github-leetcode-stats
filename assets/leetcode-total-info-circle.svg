@@ -98,7 +98,7 @@
 		<text x="-10" y="200" fill="#8A8883" class="totalSumLabel" >Solved</text>
 	</g>
 <g class="label"> 
-	<text x="200" y="50" fill="#A0C0D0" >Leetcode Solved Problems</text>
+	<text x="200" y="50" fill="#3288bd" >Leetcode Solved Problems:</text>
 </g>
 
 </svg>

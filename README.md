@@ -1,14 +1,10 @@
 ### Dynamically generated stats for GitHub and Leetcode stats for README.md
-	last automatic update: Wednesday, 25 January at 13:20 CET
+	last automatic update: Wednesday, 25 January at 16:33 CET
 
-#### GitHub Total:
 ![chart-bar](/assets/github-total-bicycle.svg)
 
-#### GitHub Languages:
 ![chart-bar](/assets/github-languages-sledge.svg)
 
-
-#### Leetcode Total:
 ![chart-bar](/assets/leetcode-total-info-circle.svg)
 
 [![README build](https://github.com/meugenom/github-leetcode-stats/actions/workflows/main.yml/badge.svg)](https://github.com/meugenom/github-leetcode-stats/actions/workflows/main.yml)
