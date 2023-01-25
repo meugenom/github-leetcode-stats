@@ -1,5 +1,5 @@
 ### Dynamically generated stats for GitHub and Leetcode stats for README.md
-	last automatic update: Wednesday, 25 January at 19:11 CET
+	last automatic update: Wednesday, 25 January at 19:17 CET
 
 ![chart-bar](/assets/github-total-bicycle.svg)
 
@@ -20,12 +20,18 @@
 6. Action script starts from GitHub service automatic every 6 hours by cron (see action script in the `/.github/workflows/main.yml`  line 8)
 
 ### What we use:
-
+- [Node v16.14.2 (LTS)](https://nodejs.org/en/blog/release/v16.14.2/)
 - [Javascript v. ES5](https://262.ecma-international.org/5.1/)
 - [Mustache Template System v.4.2.0.](https://www.npmjs.com/package/mustache)
 - [Promise based HTTP and GraphQL client axios v.0.27.2](https://www.npmjs.com/package/axios)
 - [Zero-dependency module that loads environment variables from a .env file into process.env v.16.0.3](https://www.npmjs.com/package/dotenv)
 - [Github Action Workflow Script YML](https://docs.github.com/en/actions/learn-github-actions/essential-features-of-github-actions)
+
+### How can start local
+- Use terminal command:
+```
+	node index.js
+```
 
 ### What I will do later:
 - Adding more animated SVG elements and statistics
