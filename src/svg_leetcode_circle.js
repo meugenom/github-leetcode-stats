@@ -3,20 +3,7 @@ const svgHeader = require("./svg_leetcode_circle_parts/header")
 const svgFooter = require("./svg_leetcode_circle_parts/footer");
 
 //declare 
-//by default
-const values = {	
-	colors: //color
-	[
-		["#7BC8A4"],
-		["#FFC65D"],
-		["#F16745"]
-	],
-
-	paths: 
-	{
-		radius: [125, 105, 85],
-	}
-}
+let out = "";
 
 //persistent content
 let content =
@@ -62,25 +49,20 @@ let content =
 }
 
 </style>
-
-<!-- gray circles rails by default-->
 <g stroke="#E6E2E1" fill="none" stroke-width="2">
 	<circle cx="20" cy="150" r="125" />
 	<circle cx="20" cy="150" r="105" />
 	<circle cx="20" cy="150" r="85" />
 </g>
-
-<!-- lines by default-->
 <g fill="none" stroke-width="20">
 	<line x1="180" y1="120" x2="550" y2="120" stroke="#a5d9c1" />
 	<line x1="180" y1="190" x2="550" y2="190" stroke="#ffdb99" />
 	<line x1="180" y1="260" x2="550" y2="260" stroke="#f5977f" />
 </g>
-
 `;
 
-//out
-let out = svgHeader.header + 
+
+out = svgHeader.header + 
 		  content;
 
 
@@ -105,9 +87,9 @@ out = 	out +
 
 function calculateLines(info){
 	
+	//lines by calculations
 	out = out +
 	`
-	<!-- lines by calculations-->
 	<g fill="none" stroke-width="20" class="line">
 		<line x1="180" y1="120" x2="${180 + parseInt((550-180) * info.acSubmissionNum[1]["count"]/info.allQuestionsStats[1]["count"])}" y2="120"  stroke="#7BC8A4" />
 		<line x1="180" y1="190" x2="${180 + parseInt((550-180)*info.acSubmissionNum[2]["count"]/info.allQuestionsStats[2]["count"])}" y2="190" stroke="#FFC65D" />
@@ -116,10 +98,11 @@ function calculateLines(info){
 	`
 }
 
+
 function setNamesOfLines(info){
+	//names of lines
 	out = out +
 	`
-	<!--names of lines-->
 	 <g class="name">
 		<text x="180" y="100" fill="#7BC8A4" >Easy</text>
 		<text x="240" y="100" fill="#404040">${info.acSubmissionNum[1]["count"]}</text>
