@@ -6,7 +6,7 @@ const svgFooter = require("./svg_github_sledge_parts/footer")
 let minLanguages = 6;
 
 //by default
-const values = {	
+const values = {
 	colors: //color
 	[
 		["#404040"],
@@ -97,7 +97,7 @@ let content =
 		}
 
 	</style>
-	<!-- gray rails by default-->
+	
 	<g stroke="#E6E2E1" fill="none" stroke-width="1">
   		<circle cx="20" cy="150" r="125" />
 		<circle cx="20" cy="150" r="105" />
@@ -139,13 +139,12 @@ const generateSVG = async function (languages) {
 };
 
 async function setLanguages(languages){
-
+	//names of languages
 	contentNames = 
-	`<!--names of languages-->
-	 <g class="name">`;
+	`<g class="name">`;
+	//lines of languages
 	contentLines = 
-	  `<!-- lines by default-->
-	   <g fill="none" stroke-width="20" class="line">`
+	  `<g fill="none" stroke-width="20" class="line">`
 
 	//Y coordinates of the point of the first label
 	let labelY = 280;
@@ -177,33 +176,6 @@ async function setLanguages(languages){
 
 	contentNames = contentNames + `</g>
 	`;
-
-
-	/*
-	contentNames = 
-	  `	<g class="name">
-			  <text x="575" y="260" fill="${values.colors[0]}" >${values.labels[0]}</text>
-			  <text x="475" y="240" fill="${values.colors[1]}" >${values.labels[1]}</text>
-			  <text x="375" y="220" fill="${values.colors[2]}" >${values.labels[2]}</text>
-			  <text x="275" y="200" fill="${values.colors[3]}" >${values.labels[3]}</text>
-			  <text x="175" y="180" fill="${values.colors[4]}" >${values.labels[4]}</text>
-			  <text x="75" y="160"  fill="${values.colors[5]}" >${values.labels[5]}</text>
-		  </g>
-	  `
-	*/
-
-	  /**
-	   * 
-	<!-- lines by default-->
-	<g fill="none" stroke-width="20" class="line">
-		<line x2="20" y2="275" x1="650" y1="275" stroke="${values.colors[0]}" />
-		<line x2="20" y2="255" x1="550" y1="255" stroke="${values.colors[1]}" />
-		<line x2="20" y2="235" x1="450" y1="235" stroke="${values.colors[2]}" />
-		<line x2="20" y2="215" x1="350" y1="215" stroke="${values.colors[3]}" />
-		<line x2="20" y2="195" x1="250" y1="195" stroke="${values.colors[4]}" />
-		<line x2="20" y2="175" x1="150" y1="175" stroke="${values.colors[5]}" />
-	</g>
-	   */
 }
 
 
@@ -212,8 +184,8 @@ function calculatePaths (languages){
 	centerX = 20;
 	centerY = 150;
 
+	//radius of circles
 	contentPaths = `
-	<!-- changed paths -->
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
 	`;
 
@@ -235,19 +207,6 @@ function calculatePaths (languages){
 	contentPaths = contentPaths + `
 	</g>
 	`
-
-	/*
-	contentPaths = 
-`	<!-- changed paths -->
-	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
-		<path d="M 20 275 A 125 125 45 0 1 20 25" stroke="${values.colors[0]}"/>
-		<path d="M 20 255 A 105 105 45 0 1 20 45" stroke="${values.colors[1]}" />
-		<path d="M 20 235 A 85 85 45 0 1 20 65"   stroke="${values.colors[2]}" />
-		<path d="M 20 215 A 65 65 45 0 1 20 85"   stroke="${values.colors[3]}" />
-		<path d="M 20 195 A 45 45 45 0 1 20 105"  stroke="${values.colors[4]}" />
-		<path d="M 20 175 A 25 25 45 0 1 20 125"  stroke="${values.colors[5]}" />
-	</g>
-`	*/
 }
 
 exports.generateSVG = generateSVG;

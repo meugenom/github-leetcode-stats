@@ -4,8 +4,6 @@ const header = `
 	height="200px"
 	width="600px" 
 	xmlns="http://www.w3.org/2000/svg">
-	<!-- author: meugenom -->
-	<!-- https://meugenom.com -->
 <style>
 .label {
 	font: bold 25px sans-serif;
@@ -61,7 +59,6 @@ const header = `
 
 
 <g class="ground"></g>
-<!--background line-->
 <g  stroke="#c3b5bb" fill="none" stroke-width="10">
 	<line x1="-200" y1="220" x2="750" y2="220" />
 </g>
