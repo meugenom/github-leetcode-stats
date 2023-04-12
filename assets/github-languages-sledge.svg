@@ -48,15 +48,15 @@
   		<circle cx="20" cy="150" r="25" />
 	</g>
 <g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="#404040" />
-		<line x2="337" y2="255" x1="20" y1="255" stroke="#93648D" />
-		<line x2="284" y2="235" x1="20" y1="235" stroke="#4CC3D9" />
-		<line x2="57" y2="215" x1="20" y1="215" stroke="#7BC8A4" />
+		<line x2="333" y2="255" x1="20" y1="255" stroke="#93648D" />
+		<line x2="280" y2="235" x1="20" y1="235" stroke="#4CC3D9" />
+		<line x2="55" y2="215" x1="20" y1="215" stroke="#7BC8A4" />
 		<line x2="54" y2="195" x1="20" y1="195" stroke="#FFC65D" />
 		<line x2="51" y2="175" x1="20" y1="175" stroke="#F16745" />
 		</g>
 	
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
-	<path d="M 20 275 A 125 125 45 0 1 -77 71" stroke="#404040"/>
+	<path d="M 20 275 A 125 125 45 0 1 -75 69" stroke="#404040"/>
 		<path d="M 20 255 A 105 105 45 0 1 -75 107" stroke="#93648D"/>
 		<path d="M 20 235 A 85 85 45 0 1 -59 120" stroke="#4CC3D9"/>
 		<path d="M 20 215 A 65 65 45 0 1 -44 145" stroke="#7BC8A4"/>
@@ -64,10 +64,10 @@
 		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="#F16745"/>
 		
 	</g>
-	<g class="name"> <text x="560" y="280" fill="#404040" >Java (39.3%)</text>
-		 <text x="347" y="260" fill="#93648D" >TypeScript (24.1%)</text>
-		 <text x="294" y="240" fill="#4CC3D9" >JavaScript (20.3%)</text>
-		 <text x="67" y="220" fill="#7BC8A4" >CSS (4.1%)</text>
+	<g class="name"> <text x="560" y="280" fill="#404040" >Java (39.6%)</text>
+		 <text x="343" y="260" fill="#93648D" >TypeScript (24%)</text>
+		 <text x="290" y="240" fill="#4CC3D9" >JavaScript (20.2%)</text>
+		 <text x="65" y="220" fill="#7BC8A4" >CSS (4%)</text>
 		 <text x="64" y="200" fill="#FFC65D" >Sass (3.9%)</text>
 		 <text x="61" y="180" fill="#F16745" >HTML (3.7%)</text>
 		</g>
