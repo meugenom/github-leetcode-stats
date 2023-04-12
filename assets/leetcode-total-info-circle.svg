@@ -58,13 +58,13 @@
 </g>
 
 	<g fill="none" stroke-width="20" class="line">
-		<line x1="180" y1="120" x2="221" y2="120"  stroke="#7BC8A4" />
+		<line x1="180" y1="120" x2="220" y2="120"  stroke="#7BC8A4" />
 		<line x1="180" y1="190" x2="197" y2="190" stroke="#FFC65D" />
 		<line x1="180" y1="260" x2="183" y2="260" stroke="#F16745" />
 	</g>
 	
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
-	<path d="M 20 25 A 125 125 45 0 1 98 52" stroke="#7BC8A4"/>
+	<path d="M 20 25 A 125 125 45 0 1 93 48" stroke="#7BC8A4"/>
 	<path d="M 20 45 A 105 105 45 0 1 45 48" stroke="#FFC65D"/>
 	<path d="M 20 65 A 85 85 45 0 1 20 65" stroke="#F16745"/>
 	
@@ -73,17 +73,17 @@
 	 <g class="name">
 		<text x="180" y="100" fill="#7BC8A4" >Easy</text>
 		<text x="240" y="100" fill="#404040">71</text>
-		<text x="270" y="100" fill="#ABABA1">/640</text>
+		<text x="270" y="100" fill="#ABABA1">/648</text>
 		<text x="430" y="100" fill="#989894">Beats 84.9%</text>
 
 		<text x="180" y="170" fill="#FFC65D" >Medium</text>
 		<text x="270" y="170" fill="#404040">66</text>
-		<text x="300" y="170" fill="#ABABA1">/1392</text>
+		<text x="300" y="170" fill="#ABABA1">/1403</text>
 		<text x="430" y="170" fill="#989894">Beats 79.2%</text>
 
 		<text x="180" y="240" fill="#F16745" >Hard</text>
 		<text x="240" y="240" fill="#404040">5</text>
-		<text x="270" y="240" fill="#ABABA1">/585</text>
+		<text x="270" y="240" fill="#ABABA1">/586</text>
 		<text x="430" y="240" fill="#989894">Beats 46.4%</text>
 	</g>
 	<g> 
