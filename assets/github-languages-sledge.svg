@@ -48,28 +48,28 @@
   		<circle cx="20" cy="150" r="25" />
 	</g>
 <g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="#404040" />
-		<line x2="366" y2="255" x1="20" y1="255" stroke="#93648D" />
-		<line x2="251" y2="235" x1="20" y1="235" stroke="#4CC3D9" />
-		<line x2="61" y2="215" x1="20" y1="215" stroke="#7BC8A4" />
-		<line x2="57" y2="195" x1="20" y1="195" stroke="#FFC65D" />
-		<line x2="53" y2="175" x1="20" y1="175" stroke="#F16745" />
+		<line x2="372" y2="255" x1="20" y1="255" stroke="#93648D" />
+		<line x2="247" y2="235" x1="20" y1="235" stroke="#4CC3D9" />
+		<line x2="64" y2="215" x1="20" y1="215" stroke="#7BC8A4" />
+		<line x2="61" y2="195" x1="20" y1="195" stroke="#FFC65D" />
+		<line x2="52" y2="175" x1="20" y1="175" stroke="#F16745" />
 		</g>
 	
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
 	<path d="M 20 275 A 125 125 45 0 1 -77 71" stroke="#404040"/>
-		<path d="M 20 255 A 105 105 45 0 1 -74 103" stroke="#93648D"/>
+		<path d="M 20 255 A 105 105 45 0 1 -73 102" stroke="#93648D"/>
 		<path d="M 20 235 A 85 85 45 0 1 -60 123" stroke="#4CC3D9"/>
-		<path d="M 20 215 A 65 65 45 0 1 -44 145" stroke="#7BC8A4"/>
+		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="#7BC8A4"/>
 		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="#FFC65D"/>
 		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="#F16745"/>
 		
 	</g>
-	<g class="name"> <text x="560" y="280" fill="#404040" >Java (39.3%)</text>
-		 <text x="376" y="260" fill="#93648D" >TypeScript (26.2%)</text>
-		 <text x="261" y="240" fill="#4CC3D9" >JavaScript (18%)</text>
-		 <text x="71" y="220" fill="#7BC8A4" >HTML (4.4%)</text>
-		 <text x="67" y="200" fill="#FFC65D" >Sass (4.1%)</text>
-		 <text x="63" y="180" fill="#F16745" >CSS (3.8%)</text>
+	<g class="name"> <text x="560" y="280" fill="#404040" >Java (39.1%)</text>
+		 <text x="382" y="260" fill="#93648D" >TypeScript (26.5%)</text>
+		 <text x="257" y="240" fill="#4CC3D9" >JavaScript (17.6%)</text>
+		 <text x="74" y="220" fill="#7BC8A4" >HTML (4.6%)</text>
+		 <text x="71" y="200" fill="#FFC65D" >Sass (4.4%)</text>
+		 <text x="62" y="180" fill="#F16745" >CSS (3.7%)</text>
 		</g>
 	
 <g class="label"> 
