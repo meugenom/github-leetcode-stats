@@ -1,0 +1,18 @@
+### GitHub and LeetCode Stats Generator
+
+This repository contains a tool that generates dynamically updated statistics 
+for your GitHub profile and LeetCode account.
+
+{{!--  you can remove this comment  --}}
+
+{{!--  current date  --}}
+last automatic update: {{date}}
+
+{{!--  you can remove this chart  --}}
+![chart-bar](/assets/github-total-bicycle.svg)
+
+{{!--  you can remove this chart  --}}
+![chart-bar](/assets/github-languages-sledge.svg)
+
+{{!--  you can remove this chart  --}}
+![chart-bar](/assets/leetcode-total-info-circle.svg)
