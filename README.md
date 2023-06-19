@@ -5,13 +5,18 @@
 This repository contains a tool that generates dynamically updated statistics 
 for your GitHub profile and LeetCode account.
 
-last automatic update: Monday, 19 June at 12:53 CEST
+last automatic update: Monday, 19 June at 13:22 CEST
 
 ![chart-bar](/assets/github-total-bicycle.svg)
 
 ![chart-bar](/assets/github-languages-sledge.svg)
 
 ![chart-bar](/assets/leetcode-total-info-circle.svg)
+
+-----------------------
+
+## About this project
+The idea of this project was to write a script that could display statistics about projects on GitHub and statistics from Leetcode. The challenge was to present this information in the form of a graph in the README.md file. In reality, README.md supports embedding HTML code, but it can be quite cumbersome when trying to create a graph and insert it into the documentation file. Therefore, an alternative approach was chosen where the script would periodically retrieve the latest statistics using API requests and generate an SVG file, which can be displayed nicely in the README.md file.
 
 -----------------------
 
