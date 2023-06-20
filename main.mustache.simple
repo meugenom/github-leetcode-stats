@@ -12,6 +12,9 @@ last automatic update: {{date}}
 ![chart-bar](/assets/github-total-bicycle.svg)
 
 {{!--  you can remove this chart  --}}
+![chart-bar](/assets/github-languages-pie-chart.svg)
+
+{{!--  you can remove this chart  --}}
 ![chart-bar](/assets/github-languages-sledge.svg)
 
 {{!--  you can remove this chart  --}}

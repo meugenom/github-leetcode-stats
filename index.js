@@ -10,6 +10,7 @@ const githubLanguages = require("./src/github_languages")
 const leetcode = require("./src/leetcode");
 const config = require("./src/config");
 const svgGithubLanguages = require("./src/svg_github_sledge.js")
+const svgGithubChartPie = require("./src/svg-github-chart-pie.js")
 const svgLeetcodeTotalInfo = require("./src/svg_leetcode_circle.js")
 const svgGithubTotalInfo = require("./src/svg_github_bicycle.js")
 const githubToken = process.env.GH_TOKEN;
@@ -55,13 +56,11 @@ async function main() {
 	await svgGithubTotalInfo.generateSVG(githubCommits.info.github);
 
   	
-	await githubLanguages.get(config.username.github, config.github_token); //get info about github most used languages
-  	//await console.log(JSON.stringify(githubLanguages.info));
+	await githubLanguages.get(config.username.github, config.github_token); //get info about github most used languages  	
 	await svgGithubLanguages.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
-	
-	await leetcode.get(config.username.leetcode);
-	//await console.log(JSON.stringify(leetcode.info));
-	await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode);
+  await svgGithubChartPie.generateSVGChart(githubLanguages.info.github.languages); //generate svg about chart languages  
+	await leetcode.get(config.username.leetcode);//get info about leetcode
+	await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode); //generate svg about leetcode
     
 	await generateReadMe(); //generate mustache template
   
