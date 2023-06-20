@@ -1,22 +1,14 @@
 const fs = require("fs");
 const svgHeader = require("./svg_github_sledge_parts/header")
 const svgFooter = require("./svg_github_sledge_parts/footer")
+const config = require("./config")
+const utils = require("./utils")
 
 //min lanuages, by default 6
 let minLanguages = 6;
 
 //by default
 const values = {
-	colors: //color
-	[
-		["#404040"],
-		["#93648D"],
-		["#4CC3D9"],
-		["#7BC8A4"],
-		["#FFC65D"],
-		["#F16745"]
-	],
-
 	lines : //[X1,Y1,X2,Y2]
 	[
 		[550, 275, 20, 275],
@@ -27,6 +19,8 @@ const values = {
 		[50, 175, 20, 175],
 	],
 
+	labels:  //[name of the language]
+	[ ],
 	paths: 
 	{
 		radius: [125, 105, 85, 65, 45, 25],
@@ -49,17 +43,11 @@ const values = {
 			[20, 125]
 		]
 	}
-	,
-	labels:  //[name of the language]
-	[ 
-		["Java"],
-		["JavaScript"],
-		["TypeScript"],
-		["SCSS"],
-		["Go"],
-		["C"]
-	]
 }
+
+let colors = config.colors;
+//shuffle colors
+colors = utils.shuffle(colors);
 
 //persistent content
 let content =
@@ -160,12 +148,12 @@ async function setLanguages(languages){
 
 		//every line
 		contentLines = contentLines + 
-		`<line x2="${currentWidth}" y2="${values.lines[i][1]}" x1="${values.lines[i][2]}" y1="${values.lines[i][3]}" stroke="${values.colors[i]}" />
+		`<line x2="${currentWidth}" y2="${values.lines[i][1]}" x1="${values.lines[i][2]}" y1="${values.lines[i][3]}" stroke="${colors[i]}" />
 		`
 		//every label
 		values.labels[i] = languages[i]["name"] + " ("+ languages[i]["percentage"]+"%)";
 		contentNames = contentNames + 
-		` <text x="${currentWidth+10}" y="${labelY}" fill="${values.colors[i]}" >${values.labels[i]}</text>
+		` <text x="${currentWidth+10}" y="${labelY}" fill="${colors[i]}" >${values.labels[i]}</text>
 		`		
 		//next step
 		labelY = labelY - 20;
@@ -200,7 +188,7 @@ function calculatePaths (languages){
 		//console.log(languages[i]["percentage"]+" : "+degrees+" |"+ degreesToRadians + "| x = "+x + "|y = "+y);
 		
 		contentPaths = contentPaths + 
-		`<path d="M ${values.paths.startXY[i][0]} ${values.paths.startXY[i][1]} A ${values.paths.radius[i]} ${values.paths.radius[i]} 45 0 1 ${x} ${y}" stroke="${values.colors[i]}"/>
+		`<path d="M ${values.paths.startXY[i][0]} ${values.paths.startXY[i][1]} A ${values.paths.radius[i]} ${values.paths.radius[i]} 45 0 1 ${x} ${y}" stroke="${colors[i]}"/>
 		`
 	}
 
