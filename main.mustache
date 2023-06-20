@@ -28,7 +28,18 @@ The idea of this project was to write a script that could display statistics abo
 - Generates a chart showing your GitHub language usage
 - Generates a chart showing your LeetCode statistics
 - Runs automatically every 6 hours through a GitHub Action
-- Supports custom color palettes
+- Supports generated color
+
+### Code Structuring:
+
+- Entry point in the file `src/index.js`.
+- The file `simple.env` is used to run the script locally. It needs to be renamed to `.env` and requires the addition of a GitHub token from step 2 of "How to Use:"
+- The file `main.mustache.simple` needs to be renamed to `main.mustache`.
+- The file `src/config.js` contains a set of colors and parameter names for searching information on GitHub and LeetCode.
+- The file `utils/utils.js` contains a set of utility functions.
+- The files `src/generators/*.js` contain builders that assemble the code of SVG files.
+- The files `src/services/*.js` use requests to the GitHub and LeetCode websites to retrieve up-to-date information.
+- The files in `src/templates/` serve as static components for constructing SVG files.
 
 ### How to Use:
 
