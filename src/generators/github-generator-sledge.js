@@ -1,8 +1,8 @@
 const fs = require("fs");
-const svgHeader = require("./svg_github_sledge_parts/header")
-const svgFooter = require("./svg_github_sledge_parts/footer")
-const config = require("./config")
-const utils = require("./utils")
+const svgHeader = require("../templates/sledge/header")
+const svgFooter = require("../templates/sledge/footer")
+const config = require("../config")
+const utils = require("../utils/utils")
 
 //min lanuages, by default 6
 let minLanguages = 6;

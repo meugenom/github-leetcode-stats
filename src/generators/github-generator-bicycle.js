@@ -1,15 +1,15 @@
 const fs = require("fs");
-const svgHeader = require("./svg_github_bicycle_total_parts/header")
-const svgFooter = require("./svg_github_bicycle_total_parts/footer")
+const svgHeader = require("../templates/bicycle/header")
+const svgFooter = require("../templates/bicycle/footer")
 
 //icons
-const star = require("./svg_github_bicycle_total_parts/star")
-const followers = require("./svg_github_bicycle_total_parts/followers")
-const repositories = require("./svg_github_bicycle_total_parts/repositories")
-const commits = require("./svg_github_bicycle_total_parts/commits")
-const contributions = require("./svg_github_bicycle_total_parts/contributions")
-const issues = require("./svg_github_bicycle_total_parts/issues")
-const pullRequests = require("./svg_github_bicycle_total_parts/pullRequests")
+const star = require("../templates/bicycle/star")
+const followers = require("../templates/bicycle/followers")
+const repositories = require("../templates/bicycle/repositories")
+const commits = require("../templates/bicycle/commits")
+const contributions = require("../templates/bicycle/contributions")
+const issues = require("../templates/bicycle/issues")
+const pullRequests = require("../templates/bicycle/pullRequests")
 
 //declarations
 let out = svgHeader.header;

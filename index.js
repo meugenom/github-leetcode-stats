@@ -1,23 +1,32 @@
 'use strict';
 
-require('dotenv').config();
-const Mustache = require("mustache");
 const fs = require("fs");
+require('dotenv').config();
+
+// shablonizator Mustache
+const Mustache = require("mustache");
 const MUSTACHE_MAIN_DIR = "./main.mustache";
 
-const githubCommits = require("./src/github_commits");
-const githubLanguages = require("./src/github_languages")
-const leetcode = require("./src/leetcode");
+// services with API calls to get data from GitHub and Leetcode websites
+const githubCommits = require("./src/services/github-total");
+const githubLanguages = require("./src/services/github-languages")
+const leetcode = require("./src/services/leetcode");
+
+// config file
 const config = require("./src/config");
-const svgGithubLanguages = require("./src/svg_github_sledge.js")
-const svgGithubChartPie = require("./src/svg-github-chart-pie.js")
-const svgLeetcodeTotalInfo = require("./src/svg_leetcode_circle.js")
-const svgGithubTotalInfo = require("./src/svg_github_bicycle.js")
+
+// svg code generators
+const svgGithubLanguages = require("./src/generators/github-generator-sledge.js")
+const svgGithubChartPie = require("./src/generators/github-generator-chart-pie.js")
+const svgLeetcodeTotalInfo = require("./src/generators/leetcode-generator-circles.js")
+const svgGithubTotalInfo = require("./src/generators/github-generator-bicycle.js")
+
+// github token when it exists in .env
 const githubToken = process.env.GH_TOKEN;
 
 
 /**
- * check github token from .env or from the SECRET for github action
+ * check GitHub token from .env or from the SECRET for GitHub action
  */
 
 if (!githubToken) {
@@ -48,23 +57,24 @@ function generateReadMe() {
   });
 }
 
-//main
+//main code
 async function main() {
 	
-	await githubCommits.get(config.username.github, config.github_token); //get info about github commits, repositories
-  	//await console.log(JSON.stringify(githubCommits.info));
-	await svgGithubTotalInfo.generateSVG(githubCommits.info.github);
+	await githubCommits.get(config.username.github, config.github_token); //get info about GitHub commits, repositories
+	await svgGithubTotalInfo.generateSVG(githubCommits.info.github); //generate svg about commits, repositories
 
   	
-	await githubLanguages.get(config.username.github, config.github_token); //get info about github most used languages  	
+	await githubLanguages.get(config.username.github, config.github_token); //get info about GitHub most used languages
 	await svgGithubLanguages.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
-  await svgGithubChartPie.generateSVGChart(githubLanguages.info.github.languages); //generate svg about chart languages  
+
+    await svgGithubChartPie.generateSVGChart(githubLanguages.info.github.languages); //generate svg chart pie about chart languages
 	await leetcode.get(config.username.leetcode);//get info about leetcode
-	await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode); //generate svg about leetcode
+
+    await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode); //generate svg about leetcode
     
 	await generateReadMe(); //generate mustache template
   
 }
 
-//start 
+//entry point
 main();

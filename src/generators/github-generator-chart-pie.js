@@ -1,8 +1,8 @@
 const fs = require("fs");
-const svgHeader = require("./svg-chart-pie-parts/header");
-const svgFooter = require("./svg-chart-pie-parts/footer");
-const config = require("./config");
-const utils = require("./utils");
+const svgHeader = require("../templates/chart-pie/header");
+const svgFooter = require("../templates/chart-pie/footer");
+const config = require("../config");
+const utils = require("../utils/utils");
 
 //declarations
 let out = svgHeader.header;

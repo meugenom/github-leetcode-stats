@@ -20,7 +20,7 @@ const setData = async (res) => {
 
   //generate array type [{language: size}]
   repNodes.forEach((repNode) => {
-    let = langNodes = repNode["languages"]["edges"];
+    let langNodes = repNode["languages"]["edges"];
     langNodes.forEach((langNode) => {
       //console.log(langNode["node"]["name"]+":"+langNode["size"])
       const node = {};

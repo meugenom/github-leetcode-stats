@@ -1,6 +1,6 @@
 const fs = require("fs");
-const svgHeader = require("./svg_leetcode_circle_parts/header")
-const svgFooter = require("./svg_leetcode_circle_parts/footer");
+const svgHeader = require("../templates/leetcode-circles/header")
+const svgFooter = require("../templates/leetcode-circles/footer");
 
 //declare 
 let out = "";
