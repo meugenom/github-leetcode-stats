@@ -157,8 +157,17 @@ const footer = `
     }
 }
 
+.legend {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
 </style>
 
+<g class="legend"> 
+	<text x="300" y="60" fill="#3288bd" >Github Total Stats:</text>
+</g>
 <defs>
 <path d="M493.766 464.979C492.884 462.513 493.457 460.053 495.045 459.485L519.959 450.575C521.548 450.007 523.55 451.545 524.432 454.012L524.923 455.385C525.805 457.852 525.233 460.312 523.645 460.88L498.73 469.79C497.142 470.358 495.14 468.819 494.258 466.353L493.766 464.979Z" id="Fill"/>
 <linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="381.035" x2="493.515" y1="324.01" y2="324.01">
