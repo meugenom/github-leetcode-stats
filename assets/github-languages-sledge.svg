@@ -47,29 +47,29 @@
 		<circle cx="20" cy="150" r="45" />
   		<circle cx="20" cy="150" r="25" />
 	</g>
-<g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="maroon" />
-		<line x2="372" y2="255" x1="20" y1="255" stroke="wheat" />
-		<line x2="289" y2="235" x1="20" y1="235" stroke="deepskyblue" />
-		<line x2="65" y2="215" x1="20" y1="215" stroke="lime" />
-		<line x2="62" y2="195" x1="20" y1="195" stroke="mediumseagreen" />
-		<line x2="50" y2="175" x1="20" y1="175" stroke="sienna" />
+<g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="slateblue" />
+		<line x2="372" y2="255" x1="20" y1="255" stroke="salmon" />
+		<line x2="289" y2="235" x1="20" y1="235" stroke="orangered" />
+		<line x2="65" y2="215" x1="20" y1="215" stroke="burlywood" />
+		<line x2="62" y2="195" x1="20" y1="195" stroke="indianred" />
+		<line x2="50" y2="175" x1="20" y1="175" stroke="mediumseagreen" />
 		</g>
 	
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
-	<path d="M 20 275 A 125 125 45 0 1 -78 73" stroke="maroon"/>
-		<path d="M 20 255 A 105 105 45 0 1 -74 103" stroke="wheat"/>
-		<path d="M 20 235 A 85 85 45 0 1 -59 120" stroke="deepskyblue"/>
-		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="lime"/>
-		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="mediumseagreen"/>
-		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="sienna"/>
+	<path d="M 20 275 A 125 125 45 0 1 -78 73" stroke="slateblue"/>
+		<path d="M 20 255 A 105 105 45 0 1 -74 103" stroke="salmon"/>
+		<path d="M 20 235 A 85 85 45 0 1 -59 120" stroke="orangered"/>
+		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="burlywood"/>
+		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="indianred"/>
+		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="mediumseagreen"/>
 		
 	</g>
-	<g class="name"> <text x="560" y="280" fill="maroon" >Java (37.8%)</text>
-		 <text x="382" y="260" fill="wheat" >TypeScript (25.6%)</text>
-		 <text x="299" y="240" fill="deepskyblue" >JavaScript (19.9%)</text>
-		 <text x="75" y="220" fill="lime" >HTML (4.5%)</text>
-		 <text x="72" y="200" fill="mediumseagreen" >Sass (4.3%)</text>
-		 <text x="60" y="180" fill="sienna" >CSS (3.5%)</text>
+	<g class="name"> <text x="560" y="280" fill="slateblue" >Java (37.8%)</text>
+		 <text x="382" y="260" fill="salmon" >TypeScript (25.6%)</text>
+		 <text x="299" y="240" fill="orangered" >JavaScript (19.9%)</text>
+		 <text x="75" y="220" fill="burlywood" >HTML (4.5%)</text>
+		 <text x="72" y="200" fill="indianred" >Sass (4.3%)</text>
+		 <text x="60" y="180" fill="mediumseagreen" >CSS (3.5%)</text>
 		</g>
 	
 <g class="label"> 
