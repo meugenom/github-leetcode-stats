@@ -77,9 +77,9 @@
 		<text x="430" y="100" fill="#989894">Beats 85.4%</text>
 
 		<text x="180" y="170" fill="#FFC65D" >Medium</text>
-		<text x="270" y="170" fill="#404040">69</text>
+		<text x="270" y="170" fill="#404040">71</text>
 		<text x="300" y="170" fill="#ABABA1">/1469</text>
-		<text x="430" y="170" fill="#989894">Beats 80%</text>
+		<text x="430" y="170" fill="#989894">Beats 80.5%</text>
 
 		<text x="180" y="240" fill="#F16745" >Hard</text>
 		<text x="240" y="240" fill="#404040">5</text>
@@ -87,7 +87,7 @@
 		<text x="430" y="240" fill="#989894">Beats 46.7%</text>
 	</g>
 	<g> 
-		<text x="-20" y="165" fill="#404040" class="totalSum" >147</text>
+		<text x="-20" y="165" fill="#404040" class="totalSum" >149</text>
 		<text x="-10" y="200" fill="#8A8883" class="totalSumLabel" >Solved</text>
 	</g>
 <g class="label"> 
