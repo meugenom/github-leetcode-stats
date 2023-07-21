@@ -51,7 +51,7 @@ function setInfo(languages){
         
         <!-- ${languages[i]['name']} -->
         <path class="path_${i + 1}" d="${path}" fill="${colors[i]}" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_${i + 1}" x="270" y="${120 + i * 20}" fill="${colors[i]}" stroke="${colors[i]}" stroke-width="1" >${languages[i]['name']}</text>
+        <text class="txt_${i + 1}" x="260" y="${150 + i * 20}" fill="${colors[i]}" stroke="${colors[i]}" stroke-width="1" >${languages[i]['name']}</text>
 
         `
     }
