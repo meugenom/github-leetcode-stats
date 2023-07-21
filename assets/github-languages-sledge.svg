@@ -47,29 +47,29 @@
 		<circle cx="20" cy="150" r="45" />
   		<circle cx="20" cy="150" r="25" />
 	</g>
-<g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="green" />
-		<line x2="372" y2="255" x1="20" y1="255" stroke="slateblue" />
-		<line x2="289" y2="235" x1="20" y1="235" stroke="steelblue" />
-		<line x2="65" y2="215" x1="20" y1="215" stroke="orange" />
-		<line x2="62" y2="195" x1="20" y1="195" stroke="slategray" />
-		<line x2="50" y2="175" x1="20" y1="175" stroke="yellowgreen" />
+<g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="turquoise" />
+		<line x2="372" y2="255" x1="20" y1="255" stroke="silver" />
+		<line x2="289" y2="235" x1="20" y1="235" stroke="saddlebrown" />
+		<line x2="65" y2="215" x1="20" y1="215" stroke="chocolate" />
+		<line x2="62" y2="195" x1="20" y1="195" stroke="darkslategray" />
+		<line x2="50" y2="175" x1="20" y1="175" stroke="darkturquoise" />
 		</g>
 	
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
-	<path d="M 20 275 A 125 125 45 0 1 -78 73" stroke="green"/>
-		<path d="M 20 255 A 105 105 45 0 1 -74 103" stroke="slateblue"/>
-		<path d="M 20 235 A 85 85 45 0 1 -59 120" stroke="steelblue"/>
-		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="orange"/>
-		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="slategray"/>
-		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="yellowgreen"/>
+	<path d="M 20 275 A 125 125 45 0 1 -78 73" stroke="turquoise"/>
+		<path d="M 20 255 A 105 105 45 0 1 -74 103" stroke="silver"/>
+		<path d="M 20 235 A 85 85 45 0 1 -59 120" stroke="saddlebrown"/>
+		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="chocolate"/>
+		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="darkslategray"/>
+		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="darkturquoise"/>
 		
 	</g>
-	<g class="name"> <text x="560" y="280" fill="green" >Java (37.8%)</text>
-		 <text x="382" y="260" fill="slateblue" >TypeScript (25.6%)</text>
-		 <text x="299" y="240" fill="steelblue" >JavaScript (19.9%)</text>
-		 <text x="75" y="220" fill="orange" >HTML (4.5%)</text>
-		 <text x="72" y="200" fill="slategray" >Sass (4.3%)</text>
-		 <text x="60" y="180" fill="yellowgreen" >CSS (3.5%)</text>
+	<g class="name"> <text x="560" y="280" fill="turquoise" >Java (37.8%)</text>
+		 <text x="382" y="260" fill="silver" >TypeScript (25.6%)</text>
+		 <text x="299" y="240" fill="saddlebrown" >JavaScript (19.9%)</text>
+		 <text x="75" y="220" fill="chocolate" >HTML (4.5%)</text>
+		 <text x="72" y="200" fill="darkslategray" >Sass (4.3%)</text>
+		 <text x="60" y="180" fill="darkturquoise" >CSS (3.5%)</text>
 		</g>
 	
 <g class="label"> 
