@@ -41,7 +41,7 @@ function setInfo(languages){
         //calculate percent with 2 digits after comma
         const percent = Math.round(languages[i]['percentage'] * 100 * 3.6) / 100;
 
-        const path = utils.generateSectorPath(100, 100, 100, lastStartAngle, percent + lastStartAngle);
+        const path = utils.generateSectorPath(60, 120, 100, lastStartAngle, percent + lastStartAngle);
 
         lastStartAngle = lastStartAngle + percent;
 
@@ -51,7 +51,7 @@ function setInfo(languages){
         
         <!-- ${languages[i]['name']} -->
         <path class="path_${i + 1}" d="${path}" fill="${colors[i]}" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_${i + 1}" x="320" y="${100 + i * 20}" fill="${colors[i]}" stroke="${colors[i]}" stroke-width="1" >${languages[i]['name']}</text>
+        <text class="txt_${i + 1}" x="270" y="${120 + i * 20}" fill="${colors[i]}" stroke="${colors[i]}" stroke-width="1" >${languages[i]['name']}</text>
 
         `
     }

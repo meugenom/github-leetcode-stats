@@ -1,10 +1,16 @@
 header = `
-<svg height="400px" width="400px" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-<style>
+<svg height="350px" width="350px" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<style> 
+        .label {
+                font: bold 20px sans-serif;
+                color: #404040;
+                -webkit-text-stroke: 1px white;
+        }
+
         path {
-                stroke: #000;
-                stroke-width: 2px;
-                transform: translate(100px, 100px);
+                stroke: #E6E2E1;
+                stroke-width: 1px;
+                transform: translate(60px, 100px);
         }
 
         .path_1 {
@@ -61,16 +67,16 @@ header = `
 
         @keyframes fadeIn {
                 0% {                        
-                        transform: translate(250px, 350px) rotate(0deg) scale(0);
+                        transform: translate(250px, 300px) rotate(0deg) scale(0);
                         
                 }
                 50% {
-                        transform: translate(200px, 250px) rotate(180deg) scale(0.5);
+                        transform: translate(150px, 220px) rotate(180deg) scale(0.5);
                         
                 }
                 
                 100% {
-                        transform: translate(100px, 100px) rotate(360deg) scale(1);
+                        transform: translate(60px, 120px) rotate(360deg) scale(1);
                         
                 }
         }
@@ -127,10 +133,11 @@ header = `
         @keyframes txtShow {
                 0% {                        
                         opacity: 0;
-                        
+                        transform: translate(0px, 0px) scale(0);
                 }
                 100% {
                         opacity: 1;
+                        transform: translate(0px, 0px) scale(1);
                         
                 }
         }
