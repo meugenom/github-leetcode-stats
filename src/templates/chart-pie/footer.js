@@ -1,6 +1,6 @@
 footer = `
     <g class="label"> 
-	    <text x="70" y="40" fill="grey" >Most Used Languages:</text>
+	    <text x="50" y="80" fill="grey" >Most Used Languages:</text>
     </g>
 </svg>
 `
