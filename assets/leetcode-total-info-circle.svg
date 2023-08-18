@@ -73,12 +73,12 @@
 	 <g class="name">
 		<text x="180" y="100" fill="#7BC8A4" >Easy</text>
 		<text x="240" y="100" fill="#404040">74</text>
-		<text x="270" y="100" fill="#ABABA1">/705</text>
+		<text x="270" y="100" fill="#ABABA1">/707</text>
 		<text x="430" y="100" fill="#989894">Beats 85.7%</text>
 
 		<text x="180" y="170" fill="#FFC65D" >Medium</text>
 		<text x="270" y="170" fill="#404040">72</text>
-		<text x="300" y="170" fill="#ABABA1">/1494</text>
+		<text x="300" y="170" fill="#ABABA1">/1495</text>
 		<text x="430" y="170" fill="#989894">Beats 80.7%</text>
 
 		<text x="180" y="240" fill="#F16745" >Hard</text>
