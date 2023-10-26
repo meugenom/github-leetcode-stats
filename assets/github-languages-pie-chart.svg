@@ -145,62 +145,62 @@
 
         
         <!-- Java -->
-        <path class="path_1" d="M 60,120 L 60.00000000000001,20 A 100,100 0 0 1 137.05132427757894,183.74239897486896 Z" fill="Orange" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_1" x="260" y="150" fill="Orange" stroke="Orange" stroke-width="1" >Java</text>
+        <path class="path_1" d="M 60,120 L 60.00000000000001,20 A 100,100 0 0 1 137.05132427757894,183.74239897486896 Z" fill="Tomato" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_1" x="260" y="150" fill="Tomato" stroke="Tomato" stroke-width="1" >Java</text>
 
         
         
         <!-- TypeScript -->
-        <path class="path_2" d="M 60,120 L 137.05132427757894,183.74239897486896 A 100,100 0 0 1 -24.7677936085083,173.05111843067345 Z" fill="LightSeaGreen" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_2" x="260" y="170" fill="LightSeaGreen" stroke="LightSeaGreen" stroke-width="1" >TypeScript</text>
+        <path class="path_2" d="M 60,120 L 137.05132427757894,183.74239897486896 A 100,100 0 0 1 -24.7677936085083,173.05111843067345 Z" fill="IndianRed" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_2" x="260" y="170" fill="IndianRed" stroke="IndianRed" stroke-width="1" >TypeScript</text>
 
         
         
         <!-- JavaScript -->
-        <path class="path_3" d="M 60,120 L -24.7677936085083,173.05111843067345 A 100,100 0 0 1 -28.229122643495344,72.92960678346678 Z" fill="Orchid" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_3" x="260" y="190" fill="Orchid" stroke="Orchid" stroke-width="1" >JavaScript</text>
+        <path class="path_3" d="M 60,120 L -24.7677936085083,173.05111843067345 A 100,100 0 0 1 -28.229122643495344,72.92960678346678 Z" fill="RosyBrown" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_3" x="260" y="190" fill="RosyBrown" stroke="RosyBrown" stroke-width="1" >JavaScript</text>
 
         
         
         <!-- HTML -->
-        <path class="path_4" d="M 60,120 L -28.229122643495344,72.92960678346678 A 100,100 0 0 1 -7.995337872241976,46.674465377744056 Z" fill="Tomato" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_4" x="260" y="210" fill="Tomato" stroke="Tomato" stroke-width="1" >HTML</text>
+        <path class="path_4" d="M 60,120 L -28.229122643495344,72.92960678346678 A 100,100 0 0 1 -7.995337872241976,46.674465377744056 Z" fill="DarkKhaki" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_4" x="260" y="210" fill="DarkKhaki" stroke="DarkKhaki" stroke-width="1" >HTML</text>
 
         
         
         <!-- Sass -->
-        <path class="path_5" d="M 60,120 L -7.995337872241976,46.674465377744056 A 100,100 0 0 1 12.929606783466674,31.770877356504712 Z" fill="DarkKhaki" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_5" x="260" y="230" fill="DarkKhaki" stroke="DarkKhaki" stroke-width="1" >Sass</text>
+        <path class="path_5" d="M 60,120 L -7.995337872241976,46.674465377744056 A 100,100 0 0 1 12.929606783466674,31.770877356504712 Z" fill="Orchid" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_5" x="260" y="230" fill="Orchid" stroke="Orchid" stroke-width="1" >Sass</text>
 
         
         
         <!-- CSS -->
-        <path class="path_6" d="M 60,120 L 12.929606783466674,31.770877356504712 A 100,100 0 0 1 32.704806448267405,23.797232841391434 Z" fill="Crimson" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_6" x="260" y="250" fill="Crimson" stroke="Crimson" stroke-width="1" >CSS</text>
+        <path class="path_6" d="M 60,120 L 12.929606783466674,31.770877356504712 A 100,100 0 0 1 32.704806448267405,23.797232841391434 Z" fill="RoyalBlue" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_6" x="260" y="250" fill="RoyalBlue" stroke="RoyalBlue" stroke-width="1" >CSS</text>
 
         
         
         <!-- Python -->
-        <path class="path_7" d="M 60,120 L 32.704806448267405,23.797232841391434 A 100,100 0 0 1 41.87942363728614,21.655479500467052 Z" fill="MediumAquaMarine" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_7" x="260" y="270" fill="MediumAquaMarine" stroke="MediumAquaMarine" stroke-width="1" >Python</text>
+        <path class="path_7" d="M 60,120 L 32.704806448267405,23.797232841391434 A 100,100 0 0 1 41.87942363728614,21.655479500467052 Z" fill="LightSeaGreen" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_7" x="260" y="270" fill="LightSeaGreen" stroke="LightSeaGreen" stroke-width="1" >Python</text>
 
         
         
         <!-- Batchfile -->
-        <path class="path_8" d="M 60,120 L 41.87942363728614,21.655479500467052 A 100,100 0 0 1 50.589168668148425,20.443803539692013 Z" fill="DodgerBlue" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_8" x="260" y="290" fill="DodgerBlue" stroke="DodgerBlue" stroke-width="1" >Batchfile</text>
+        <path class="path_8" d="M 60,120 L 41.87942363728614,21.655479500467052 A 100,100 0 0 1 50.589168668148425,20.443803539692013 Z" fill="Chocolate" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_8" x="260" y="290" fill="Chocolate" stroke="Chocolate" stroke-width="1" >Batchfile</text>
 
         
         
         <!-- Mustache -->
-        <path class="path_9" d="M 60,120 L 50.589168668148425,20.443803539692013 A 100,100 0 0 1 54.97556818202298,20.12630433939826 Z" fill="Tan" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_9" x="260" y="310" fill="Tan" stroke="Tan" stroke-width="1" >Mustache</text>
+        <path class="path_9" d="M 60,120 L 50.589168668148425,20.443803539692013 A 100,100 0 0 1 54.97556818202298,20.12630433939826 Z" fill="MediumAquaMarine" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_9" x="260" y="310" fill="MediumAquaMarine" stroke="MediumAquaMarine" stroke-width="1" >Mustache</text>
 
         
         
         <!-- SCSS -->
-        <path class="path_10" d="M 60,120 L 54.97556818202298,20.12630433939826 A 100,100 0 0 1 58.74339601166471,20.007895579618392 Z" fill="MediumTurquoise" stroke="#fff" stroke-width="2"></path>
-        <text class="txt_10" x="260" y="330" fill="MediumTurquoise" stroke="MediumTurquoise" stroke-width="1" >SCSS</text>
+        <path class="path_10" d="M 60,120 L 54.97556818202298,20.12630433939826 A 100,100 0 0 1 58.74339601166471,20.007895579618392 Z" fill="Crimson" stroke="#fff" stroke-width="2"></path>
+        <text class="txt_10" x="260" y="330" fill="Crimson" stroke="Crimson" stroke-width="1" >SCSS</text>
 
         
     <g class="label"> 
