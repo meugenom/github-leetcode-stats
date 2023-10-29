@@ -79,7 +79,7 @@ const setData = async (res) => {
 			}
 			`,
 		variables: {
-			username: 'meugenom'
+			username: username
 		},
 	  };
 	  let options = {
