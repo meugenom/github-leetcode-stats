@@ -102,12 +102,16 @@ const get = async (username, token) => {
       Authorization: `bearer ${token}`,
     },
   };
+  try {
   await axios
     .post("https://api.github.com/graphql", body, options)
     .then(async (response) => {
       //console.log(JSON.stringify(response.data));
       setData(JSON.stringify(response.data));
     });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 exports.get = get;

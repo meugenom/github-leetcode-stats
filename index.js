@@ -67,10 +67,10 @@ async function main() {
 	await githubLanguages.get(config.username.github, config.github_token); //get info about GitHub most used languages
 	await svgGithubLanguages.generateSVG(githubLanguages.info.github.languages); //generate svg about languages
 
-    await svgGithubChartPie.generateSVGChart(githubLanguages.info.github.languages); //generate svg chart pie about chart languages
-	await leetcode.get(config.username.leetcode);//get info about leetcode
-
-    await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode); //generate svg about leetcode
+  await svgGithubChartPie.generateSVGChart(githubLanguages.info.github.languages); //generate svg chart pie about chart languages
+	  
+  await leetcode.get(config.username.leetcode);//get info about leetcode
+  await svgLeetcodeTotalInfo.generateSVG(leetcode.info.leetcode); //generate svg about leetcode
     
 	await generateReadMe(); //generate mustache template
   
