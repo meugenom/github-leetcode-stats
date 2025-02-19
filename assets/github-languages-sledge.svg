@@ -49,27 +49,27 @@
 	</g>
 <g fill="none" stroke-width="20" class="line"><line x2="550" y2="275" x1="20" y1="275" stroke="Pink" />
 		<line x2="507" y2="255" x1="20" y1="255" stroke="DarkKhaki" />
-		<line x2="244" y2="235" x1="20" y1="235" stroke="SteelBlue" />
-		<line x2="77" y2="215" x1="20" y1="215" stroke="Crimson" />
-		<line x2="66" y2="195" x1="20" y1="195" stroke="IndianRed" />
-		<line x2="63" y2="175" x1="20" y1="175" stroke="MediumAquaMarine" />
+		<line x2="244" y2="235" x1="20" y1="235" stroke="MediumSlateBlue" />
+		<line x2="77" y2="215" x1="20" y1="215" stroke="Orange" />
+		<line x2="66" y2="195" x1="20" y1="195" stroke="DodgerBlue" />
+		<line x2="63" y2="175" x1="20" y1="175" stroke="Orchid" />
 		</g>
 	
 	<g fill="none" stroke-width="20" stroke-linecap="round" class="path">
 	<path d="M 20 275 A 125 125 45 0 1 -82 78" stroke="Pink"/>
 		<path d="M 20 255 A 105 105 45 0 1 -69 94" stroke="DarkKhaki"/>
-		<path d="M 20 235 A 85 85 45 0 1 -61 126" stroke="SteelBlue"/>
-		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="Crimson"/>
-		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="IndianRed"/>
-		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="MediumAquaMarine"/>
+		<path d="M 20 235 A 85 85 45 0 1 -61 126" stroke="MediumSlateBlue"/>
+		<path d="M 20 215 A 65 65 45 0 1 -44 144" stroke="Orange"/>
+		<path d="M 20 195 A 45 45 45 0 1 -24 146" stroke="DodgerBlue"/>
+		<path d="M 20 175 A 25 25 45 0 1 -4 148" stroke="Orchid"/>
 		
 	</g>
 	<g class="name"> <text x="560" y="280" fill="Pink" >Java (34.9%)</text>
 		 <text x="517" y="260" fill="DarkKhaki" >TypeScript (32.2%)</text>
-		 <text x="254" y="240" fill="SteelBlue" >JavaScript (15.5%)</text>
-		 <text x="87" y="220" fill="Crimson" >HTML (4.9%)</text>
-		 <text x="76" y="200" fill="IndianRed" >CSS (4.2%)</text>
-		 <text x="73" y="180" fill="MediumAquaMarine" >Sass (4%)</text>
+		 <text x="254" y="240" fill="MediumSlateBlue" >JavaScript (15.5%)</text>
+		 <text x="87" y="220" fill="Orange" >HTML (4.9%)</text>
+		 <text x="76" y="200" fill="DodgerBlue" >CSS (4.2%)</text>
+		 <text x="73" y="180" fill="Orchid" >Sass (4%)</text>
 		</g>
 	
 <g class="label"> 
