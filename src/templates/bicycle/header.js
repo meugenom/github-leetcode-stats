@@ -49,17 +49,16 @@ const header = `
 
 @keyframes moving {
 	from {
-		transform: translate(0px, 4px);
+		transform: translate(0px, 2px);
 	}
 	to {
-		transform: translate(0px, 0px);
+		transform: translate(1px, 0px);
 	}
 }
 </style>
 
 
-<g class="ground"></g>
-<g  stroke="#c3b5bb" fill="none" stroke-width="10">
+<g  stroke="#c3b5bb" fill="none" stroke-width="1" opacity="0.2">
 	<line x1="-200" y1="220" x2="750" y2="220" />
 </g>
 `
