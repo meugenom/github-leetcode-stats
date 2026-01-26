@@ -78,12 +78,12 @@
 
 		<text x="180" y="170" fill="#FFC65D" >Medium</text>
 		<text x="270" y="170" fill="#404040">72</text>
-		<text x="300" y="170" fill="#ABABA1">/1993</text>
+		<text x="300" y="170" fill="#ABABA1">/1996</text>
 		<text x="430" y="170" fill="#989894">Beats 80.2%</text>
 
 		<text x="180" y="240" fill="#F16745" >Hard</text>
 		<text x="240" y="240" fill="#404040">5</text>
-		<text x="270" y="240" fill="#ABABA1">/902</text>
+		<text x="270" y="240" fill="#ABABA1">/903</text>
 		<text x="430" y="240" fill="#989894">Beats 46.2%</text>
 	</g>
 	<g> 
